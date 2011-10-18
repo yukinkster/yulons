@@ -119,6 +119,7 @@ public class CameraPreviewView extends SurfaceView implements SurfaceHolder.Call
                     params.setPreviewSize(size.width, size.height);
                     camera.setParameters(params);
                     break;
+
                 }
             }
         }
