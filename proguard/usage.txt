@@ -1,0 +1,24 @@
+com.example.android.ar.CameraOverlayView:
+    private static final float DEPTH
+    private static final float ANGLE
+com.example.android.ar.MyActivity:
+    private static final java.lang.String TAG
+    static final float ACCURACY_THRESHOLD
+    static final int MIN_UPDATE_FLEQUENCY
+    static final int MIN_UPDATE_DISTANCE
+com.example.android.ar.ProximityObject:
+    double altitude
+com.example.android.ar.ProximitySearchTask:
+    private static final java.lang.String TAG
+    private static final java.lang.String QUERY
+com.example.android.ar.R$drawable:
+    public static final int android
+    public static final int green_dot
+    public static final int icon
+com.example.android.ar.R$id:
+    public static final int overlay
+com.example.android.ar.R$layout:
+    public static final int main
+com.example.android.ar.R$string:
+    public static final int app_name
+    public static final int hello

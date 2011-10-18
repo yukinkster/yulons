@@ -1,0 +1,24 @@
+com.example.android.ar.CameraPreviewView
+com.example.android.ar.R$id
+com.example.android.ar.ProximitySearchTask
+com.example.android.ar.R$attr
+com.example.android.ar.R$drawable
+com.example.android.ar.R
+com.example.android.ar.R$layout
+com.example.android.ar.MyActivity$3
+com.example.android.ar.MyActivity$2
+com.example.android.ar.R$string
+com.example.android.ar.MyActivity
+com.example.android.ar.CameraOverlayView
+com.example.android.ar.MyActivity$1
+com.example.android.ar.OrientationListener
+com.example.android.ar.ProximityObject
+com.example.android.ar.CameraPreviewView
+com.example.android.ar.CameraPreviewView: CameraPreviewView(android.content.Context,android.util.AttributeSet)
+com.example.android.ar.CameraOverlayView
+com.example.android.ar.CameraOverlayView: CameraOverlayView(android.content.Context,android.util.AttributeSet)
+com.example.android.ar.CameraPreviewView
+com.example.android.ar.CameraPreviewView: CameraPreviewView(android.content.Context,android.util.AttributeSet,int)
+com.example.android.ar.CameraOverlayView
+com.example.android.ar.CameraOverlayView: CameraOverlayView(android.content.Context,android.util.AttributeSet,int)
+com.example.android.ar.MyActivity

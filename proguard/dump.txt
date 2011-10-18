@@ -1,0 +1,3618 @@
+_____________________________________________________________________
++ Program class: com/example/android/ar/CameraPreviewView
+  Superclass:    android/view/SurfaceView
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.ar.CameraPreviewView extends android.view.SurfaceView
+
+Interfaces (count = 1):
+  - Class [android/view/SurfaceHolder$Callback]
+
+Constant Pool (count = 141):
+  - Class [android/hardware/Camera]
+  - Class [android/hardware/Camera$Parameters]
+  - Class [android/hardware/Camera$Size]
+  - Class [android/view/SurfaceHolder]
+  - Class [android/view/SurfaceHolder$Callback]
+  - Class [android/view/SurfaceView]
+  - Class [android/widget/Toast]
+  - Class [com/example/android/ar/CameraPreviewView]
+  - Class [java/io/IOException]
+  - Class [java/lang/Exception]
+  - Class [java/lang/Integer]
+  - Class [java/lang/RuntimeException]
+  - Class [java/util/Iterator]
+  - Class [java/util/List]
+  - Fieldref [android/hardware/Camera$Size.height I]
+  - Fieldref [android/hardware/Camera$Size.width I]
+  - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+  - Methodref [android/hardware/Camera.getParameters ()Landroid/hardware/Camera$Parameters;]
+  - Methodref [android/hardware/Camera.open ()Landroid/hardware/Camera;]
+  - Methodref [android/hardware/Camera.release ()V]
+  - Methodref [android/hardware/Camera.setParameters (Landroid/hardware/Camera$Parameters;)V]
+  - Methodref [android/hardware/Camera.setPreviewDisplay (Landroid/view/SurfaceHolder;)V]
+  - Methodref [android/hardware/Camera.startPreview ()V]
+  - Methodref [android/hardware/Camera.stopPreview ()V]
+  - Methodref [android/hardware/Camera$Parameters.getSupportedPictureFormats ()Ljava/util/List;]
+  - Methodref [android/hardware/Camera$Parameters.getSupportedPreviewSizes ()Ljava/util/List;]
+  - Methodref [android/hardware/Camera$Parameters.setPreviewFormat (I)V]
+  - Methodref [android/hardware/Camera$Parameters.setPreviewSize (II)V]
+  - Methodref [android/view/SurfaceView.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  - Methodref [android/view/SurfaceView.<init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V]
+  - Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+  - Methodref [android/widget/Toast.show ()V]
+  - Methodref [com/example/android/ar/CameraPreviewView.a ()V]
+  - Methodref [com/example/android/ar/CameraPreviewView.getContext ()Landroid/content/Context;]
+  - Methodref [com/example/android/ar/CameraPreviewView.getHolder ()Landroid/view/SurfaceHolder;]
+  - Methodref [java/io/IOException.getMessage ()Ljava/lang/String;]
+  - Methodref [java/lang/Exception.printStackTrace ()V]
+  - Methodref [java/lang/Integer.intValue ()I]
+  - Methodref [java/lang/RuntimeException.getMessage ()Ljava/lang/String;]
+  - InterfaceMethodref [android/view/SurfaceHolder.addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+  - InterfaceMethodref [android/view/SurfaceHolder.setType (I)V]
+  - InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  - InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  - InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V]
+  + NameAndType [a ()V]
+  + NameAndType [a Landroid/hardware/Camera;]
+  + NameAndType [addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+  + NameAndType [getContext ()Landroid/content/Context;]
+  + NameAndType [getHolder ()Landroid/view/SurfaceHolder;]
+  + NameAndType [getMessage ()Ljava/lang/String;]
+  + NameAndType [getParameters ()Landroid/hardware/Camera$Parameters;]
+  + NameAndType [getSupportedPictureFormats ()Ljava/util/List;]
+  + NameAndType [getSupportedPreviewSizes ()Ljava/util/List;]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [height I]
+  + NameAndType [intValue ()I]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + NameAndType [open ()Landroid/hardware/Camera;]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [release ()V]
+  + NameAndType [setParameters (Landroid/hardware/Camera$Parameters;)V]
+  + NameAndType [setPreviewDisplay (Landroid/view/SurfaceHolder;)V]
+  + NameAndType [setPreviewFormat (I)V]
+  + NameAndType [setPreviewSize (II)V]
+  + NameAndType [setType (I)V]
+  + NameAndType [show ()V]
+  + NameAndType [startPreview ()V]
+  + NameAndType [stopPreview ()V]
+  + NameAndType [width I]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Landroid/hardware/Camera$Parameters;]
+  + Utf8 [()Landroid/hardware/Camera;]
+  + Utf8 [()Landroid/view/SurfaceHolder;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()Ljava/util/List;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)V]
+  + Utf8 [(II)V]
+  + Utf8 [(Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Utf8 [(Landroid/content/Context;Landroid/util/AttributeSet;I)V]
+  + Utf8 [(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+  + Utf8 [(Landroid/hardware/Camera$Parameters;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder$Callback;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder;)V]
+  + Utf8 [(Landroid/view/SurfaceHolder;III)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [Landroid/hardware/Camera;]
+  + Utf8 [a]
+  + Utf8 [addCallback]
+  + Utf8 [android/hardware/Camera]
+  + Utf8 [android/hardware/Camera$Parameters]
+  + Utf8 [android/hardware/Camera$Size]
+  + Utf8 [android/view/SurfaceHolder]
+  + Utf8 [android/view/SurfaceHolder$Callback]
+  + Utf8 [android/view/SurfaceView]
+  + Utf8 [android/widget/Toast]
+  + Utf8 [com/example/android/ar/CameraPreviewView]
+  + Utf8 [getContext]
+  + Utf8 [getHolder]
+  + Utf8 [getMessage]
+  + Utf8 [getParameters]
+  + Utf8 [getSupportedPictureFormats]
+  + Utf8 [getSupportedPreviewSizes]
+  + Utf8 [hasNext]
+  + Utf8 [height]
+  + Utf8 [intValue]
+  + Utf8 [iterator]
+  + Utf8 [java/io/IOException]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [java/lang/Integer]
+  + Utf8 [java/lang/RuntimeException]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [java/util/List]
+  + Utf8 [makeText]
+  + Utf8 [next]
+  + Utf8 [open]
+  + Utf8 [printStackTrace]
+  + Utf8 [release]
+  + Utf8 [setParameters]
+  + Utf8 [setPreviewDisplay]
+  + Utf8 [setPreviewFormat]
+  + Utf8 [setPreviewSize]
+  + Utf8 [setType]
+  + Utf8 [show]
+  + Utf8 [startPreview]
+  + Utf8 [stopPreview]
+  + Utf8 [surfaceChanged]
+  + Utf8 [surfaceCreated]
+  + Utf8 [surfaceDestroyed]
+  + Utf8 [width]
+
+Fields (count = 1):
+  + Field:        a Landroid/hardware/Camera;
+    Access flags: 0x2
+      = private android.hardware.Camera a
+
+Methods (count = 6):
+  - Method:       <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    Access flags: 0x1
+      = public CameraPreviewView(android.content.Context,android.util.AttributeSet,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 4, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] iload_3 v3
+      [4] invokespecial #30
+        - Methodref [android/view/SurfaceView.<init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V]
+      [7] aload_0 v0
+      [8] invokespecial #33
+        - Methodref [com/example/android/ar/CameraPreviewView.a ()V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    Access flags: 0x1
+      = public CameraPreviewView(android.content.Context,android.util.AttributeSet)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 11, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] invokespecial #29
+        - Methodref [android/view/SurfaceView.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+      [6] aload_0 v0
+      [7] invokespecial #33
+        - Methodref [com/example/android/ar/CameraPreviewView.a ()V]
+      [10] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x2
+      = private void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] invokevirtual #35
+        - Methodref [com/example/android/ar/CameraPreviewView.getHolder ()Landroid/view/SurfaceHolder;]
+      [4] dup
+      [5] astore_1 v1
+      [6] aload_0 v0
+      [7] invokeinterface #40
+        - InterfaceMethodref [android/view/SurfaceHolder.addCallback (Landroid/view/SurfaceHolder$Callback;)V]
+      [12] aload_1 v1
+      [13] iconst_3
+      [14] invokeinterface #41
+        - InterfaceMethodref [android/view/SurfaceHolder.setType (I)V]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       surfaceChanged(Landroid/view/SurfaceHolder;III)V
+    Access flags: 0x1
+      = public void surfaceChanged(android.view.SurfaceHolder,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 203, locals = 8, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [4] ifnull +198 (target=202)
+      [7] aload_0 v0
+      [8] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [11] invokevirtual #24
+        - Methodref [android/hardware/Camera.stopPreview ()V]
+      [14] aload_0 v0
+      [15] astore_1 v1
+      [16] aload_1 v1
+      [17] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [20] invokevirtual #18
+        - Methodref [android/hardware/Camera.getParameters ()Landroid/hardware/Camera$Parameters;]
+      [23] dup
+      [24] astore v5
+      [26] invokevirtual #25
+        - Methodref [android/hardware/Camera$Parameters.getSupportedPictureFormats ()Ljava/util/List;]
+      [29] dup
+      [30] astore v6
+      [32] ifnull +66 (target=98)
+      [35] aload v6
+      [37] invokeinterface #44
+        - InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [42] astore v7
+      [44] goto +38 (target=82)
+      [47] aload v7
+      [49] invokeinterface #43
+        - InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [54] checkcast #11
+        - Class [java/lang/Integer]
+      [57] invokevirtual #38
+        - Methodref [java/lang/Integer.intValue ()I]
+      [60] iload_2 v2
+      [61] ificmpne +21 (target=82)
+      [64] aload v5
+      [66] iload_2 v2
+      [67] invokevirtual #27
+        - Methodref [android/hardware/Camera$Parameters.setPreviewFormat (I)V]
+      [70] aload_1 v1
+      [71] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [74] aload v5
+      [76] invokevirtual #21
+        - Methodref [android/hardware/Camera.setParameters (Landroid/hardware/Camera$Parameters;)V]
+      [79] goto +19 (target=98)
+      [82] aload v7
+      [84] invokeinterface #42
+        - InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [89] ifne -42 (target=47)
+      [92] goto +6 (target=98)
+      [95] invokevirtual #37
+        - Methodref [java/lang/Exception.printStackTrace ()V]
+      [98] aload_0 v0
+      [99] iload_3 v3
+      [100] istore_2 v2
+      [101] dup
+      [102] astore_1 v1
+      [103] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [106] invokevirtual #18
+        - Methodref [android/hardware/Camera.getParameters ()Landroid/hardware/Camera$Parameters;]
+      [109] dup
+      [110] astore v6
+      [112] invokevirtual #26
+        - Methodref [android/hardware/Camera$Parameters.getSupportedPreviewSizes ()Ljava/util/List;]
+      [115] dup
+      [116] astore_3 v3
+      [117] ifnull +78 (target=195)
+      [120] aload_3 v3
+      [121] invokeinterface #44
+        - InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [126] astore_3 v3
+      [127] goto +59 (target=186)
+      [130] aload_3 v3
+      [131] invokeinterface #43
+        - InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [136] checkcast #3
+        - Class [android/hardware/Camera$Size]
+      [139] dup
+      [140] astore v7
+      [142] getfield #16
+        - Fieldref [android/hardware/Camera$Size.width I]
+      [145] iload_2 v2
+      [146] ificmpgt +40 (target=186)
+      [149] aload v7
+      [151] getfield #15
+        - Fieldref [android/hardware/Camera$Size.height I]
+      [154] iload v4
+      [156] ificmpgt +30 (target=186)
+      [159] aload v6
+      [161] aload v7
+      [163] getfield #16
+        - Fieldref [android/hardware/Camera$Size.width I]
+      [166] aload v7
+      [168] getfield #15
+        - Fieldref [android/hardware/Camera$Size.height I]
+      [171] invokevirtual #28
+        - Methodref [android/hardware/Camera$Parameters.setPreviewSize (II)V]
+      [174] aload_1 v1
+      [175] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [178] aload v6
+      [180] invokevirtual #21
+        - Methodref [android/hardware/Camera.setParameters (Landroid/hardware/Camera$Parameters;)V]
+      [183] goto +12 (target=195)
+      [186] aload_3 v3
+      [187] invokeinterface #42
+        - InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [192] ifne -62 (target=130)
+      [195] aload_0 v0
+      [196] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [199] invokevirtual #23
+        - Methodref [android/hardware/Camera.startPreview ()V]
+      [202] return
+      Code attribute exceptions (count = 1):
+      - ExceptionInfo (16 -> 92: 95):
+      - Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 0):
+  + Method:       surfaceCreated(Landroid/view/SurfaceHolder;)V
+    Access flags: 0x1
+      = public void surfaceCreated(android.view.SurfaceHolder)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 72, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [4] ifnonnull +30 (target=34)
+      [7] aload_0 v0
+      [8] invokestatic #19
+        - Methodref [android/hardware/Camera.open ()Landroid/hardware/Camera;]
+      [11] putfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [14] goto +20 (target=34)
+      [17] astore_1 v1
+      [18] aload_0 v0
+      [19] invokevirtual #34
+        - Methodref [com/example/android/ar/CameraPreviewView.getContext ()Landroid/content/Context;]
+      [22] aload_1 v1
+      [23] invokevirtual #39
+        - Methodref [java/lang/RuntimeException.getMessage ()Ljava/lang/String;]
+      [26] iconst_0
+      [27] invokestatic #31
+        - Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+      [30] invokevirtual #32
+        - Methodref [android/widget/Toast.show ()V]
+      [33] return
+      [34] aload_0 v0
+      [35] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [38] aload_1 v1
+      [39] invokevirtual #22
+        - Methodref [android/hardware/Camera.setPreviewDisplay (Landroid/view/SurfaceHolder;)V]
+      [42] return
+      [43] astore_1 v1
+      [44] aload_0 v0
+      [45] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [48] invokevirtual #20
+        - Methodref [android/hardware/Camera.release ()V]
+      [51] aload_0 v0
+      [52] aconst_null
+      [53] putfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [56] aload_0 v0
+      [57] invokevirtual #34
+        - Methodref [com/example/android/ar/CameraPreviewView.getContext ()Landroid/content/Context;]
+      [60] aload_1 v1
+      [61] invokevirtual #36
+        - Methodref [java/io/IOException.getMessage ()Ljava/lang/String;]
+      [64] iconst_1
+      [65] invokestatic #31
+        - Methodref [android/widget/Toast.makeText (Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;]
+      [68] invokevirtual #32
+        - Methodref [android/widget/Toast.show ()V]
+      [71] return
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (7 -> 14: 17):
+      - Class [java/lang/RuntimeException]
+      - ExceptionInfo (34 -> 42: 43):
+      - Class [java/io/IOException]
+      Code attribute attributes (attribute count = 0):
+  + Method:       surfaceDestroyed(Landroid/view/SurfaceHolder;)V
+    Access flags: 0x1
+      = public void surfaceDestroyed(android.view.SurfaceHolder)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [4] ifnull +22 (target=26)
+      [7] aload_0 v0
+      [8] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [11] invokevirtual #24
+        - Methodref [android/hardware/Camera.stopPreview ()V]
+      [14] aload_0 v0
+      [15] getfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [18] invokevirtual #20
+        - Methodref [android/hardware/Camera.release ()V]
+      [21] aload_0 v0
+      [22] aconst_null
+      [23] putfield #17
+        - Fieldref [com/example/android/ar/CameraPreviewView.a Landroid/hardware/Camera;]
+      [26] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/R$id
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.example.android.ar.R$id extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 12):
+  - Class [com/example/android/ar/R]
+  - Class [com/example/android/ar/R$id]
+  - Class [java/lang/Object]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + Utf8 [()V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [com/example/android/ar/R]
+  + Utf8 [com/example/android/ar/R$id]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public R$id()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/ProximitySearchTask
+  Superclass:    android/os/AsyncTask
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.ar.ProximitySearchTask extends android.os.AsyncTask
+
+Interfaces (count = 0):
+
+Constant Pool (count = 209):
+  - String [,]
+  - String [3.0]
+  - String [8]
+  - String [ARExample]
+  - String [hl]
+  - String [http://ajax.googleapis.com/ajax/services/search/local?]
+  - String [jp]
+  - String [lat]
+  - String [lng]
+  - String [q]
+  - String [responseData]
+  - String [results]
+  - String [rsz]
+  - String [sll]
+  - String [titleNoFormatting]
+  - String [url]
+  - String [utf-8]
+  - String [v]
+  - String [レストラン]
+  - Class [[Landroid/location/Location;]
+  - Class [android/location/Location]
+  - Class [android/os/AsyncTask]
+  - Class [android/util/Log]
+  - Class [com/example/android/ar/CameraOverlayView]
+  - Class [com/example/android/ar/ProximityObject]
+  - Class [com/example/android/ar/ProximitySearchTask]
+  - Class [java/io/IOException]
+  - Class [java/lang/String]
+  - Class [java/lang/StringBuilder]
+  - Class [java/net/URI]
+  - Class [java/util/ArrayList]
+  - Class [java/util/List]
+  - Class [org/apache/http/HttpResponse]
+  - Class [org/apache/http/client/ClientProtocolException]
+  - Class [org/apache/http/client/HttpClient]
+  - Class [org/apache/http/client/methods/HttpGet]
+  - Class [org/apache/http/client/utils/URLEncodedUtils]
+  - Class [org/apache/http/impl/client/DefaultHttpClient]
+  - Class [org/apache/http/message/BasicNameValuePair]
+  - Class [org/apache/http/util/EntityUtils]
+  - Class [org/json/JSONArray]
+  - Class [org/json/JSONException]
+  - Class [org/json/JSONObject]
+  - Fieldref [com/example/android/ar/ProximityObject.a D]
+  - Fieldref [com/example/android/ar/ProximityObject.b D]
+  - Fieldref [com/example/android/ar/ProximityObject.c Ljava/lang/String;]
+  - Fieldref [com/example/android/ar/ProximityObject.d Ljava/lang/String;]
+  - Fieldref [com/example/android/ar/ProximitySearchTask.a Lcom/example/android/ar/CameraOverlayView;]
+  - Methodref [android/location/Location.getLatitude ()D]
+  - Methodref [android/location/Location.getLongitude ()D]
+  - Methodref [android/os/AsyncTask.<init> ()V]
+  - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+  - Methodref [com/example/android/ar/CameraOverlayView.a (Ljava/util/List;)V]
+  - Methodref [com/example/android/ar/ProximityObject.<init> ()V]
+  - Methodref [com/example/android/ar/ProximitySearchTask.a ([Landroid/location/Location;)Ljava/util/List;]
+  - Methodref [java/lang/String.valueOf (D)Ljava/lang/String;]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (D)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  - Methodref [java/net/URI.toString ()Ljava/lang/String;]
+  - Methodref [java/util/ArrayList.<init> ()V]
+  - Methodref [java/util/ArrayList.<init> (I)V]
+  - Methodref [org/apache/http/client/methods/HttpGet.<init> (Ljava/lang/String;)V]
+  - Methodref [org/apache/http/client/methods/HttpGet.abort ()V]
+  - Methodref [org/apache/http/client/methods/HttpGet.getURI ()Ljava/net/URI;]
+  - Methodref [org/apache/http/client/utils/URLEncodedUtils.format (Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;]
+  - Methodref [org/apache/http/impl/client/DefaultHttpClient.<init> ()V]
+  - Methodref [org/apache/http/message/BasicNameValuePair.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+  - Methodref [org/apache/http/util/EntityUtils.toString (Lorg/apache/http/HttpEntity;)Ljava/lang/String;]
+  - Methodref [org/json/JSONArray.getJSONObject (I)Lorg/json/JSONObject;]
+  - Methodref [org/json/JSONArray.length ()I]
+  - Methodref [org/json/JSONObject.<init> (Ljava/lang/String;)V]
+  - Methodref [org/json/JSONObject.getDouble (Ljava/lang/String;)D]
+  - Methodref [org/json/JSONObject.getJSONArray (Ljava/lang/String;)Lorg/json/JSONArray;]
+  - Methodref [org/json/JSONObject.getJSONObject (Ljava/lang/String;)Lorg/json/JSONObject;]
+  - Methodref [org/json/JSONObject.getString (Ljava/lang/String;)Ljava/lang/String;]
+  - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+  - InterfaceMethodref [org/apache/http/HttpResponse.getEntity ()Lorg/apache/http/HttpEntity;]
+  - InterfaceMethodref [org/apache/http/client/HttpClient.execute (Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (I)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Ljava/lang/String;)V]
+  + NameAndType [a (Ljava/util/List;)V]
+  + NameAndType [a ([Landroid/location/Location;)Ljava/util/List;]
+  + NameAndType [a D]
+  + NameAndType [a Lcom/example/android/ar/CameraOverlayView;]
+  + NameAndType [abort ()V]
+  + NameAndType [add (Ljava/lang/Object;)Z]
+  + NameAndType [append (D)Ljava/lang/StringBuilder;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b D]
+  + NameAndType [c Ljava/lang/String;]
+  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [d Ljava/lang/String;]
+  + NameAndType [execute (Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;]
+  + NameAndType [format (Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [getDouble (Ljava/lang/String;)D]
+  + NameAndType [getEntity ()Lorg/apache/http/HttpEntity;]
+  + NameAndType [getJSONArray (Ljava/lang/String;)Lorg/json/JSONArray;]
+  + NameAndType [getJSONObject (I)Lorg/json/JSONObject;]
+  + NameAndType [getJSONObject (Ljava/lang/String;)Lorg/json/JSONObject;]
+  + NameAndType [getLatitude ()D]
+  + NameAndType [getLongitude ()D]
+  + NameAndType [getString (Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [getURI ()Ljava/net/URI;]
+  + NameAndType [length ()I]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [toString (Lorg/apache/http/HttpEntity;)Ljava/lang/String;]
+  + NameAndType [valueOf (D)Ljava/lang/String;]
+  + Utf8 [()D]
+  + Utf8 [()I]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/net/URI;]
+  + Utf8 [()Lorg/apache/http/HttpEntity;]
+  + Utf8 [()V]
+  + Utf8 [(D)Ljava/lang/String;]
+  + Utf8 [(D)Ljava/lang/StringBuilder;]
+  + Utf8 [(I)Lorg/json/JSONObject;]
+  + Utf8 [(I)V]
+  + Utf8 [(Lcom/example/android/ar/CameraOverlayView;)V]
+  + Utf8 [(Ljava/lang/Object;)V]
+  + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)D]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)Lorg/json/JSONArray;]
+  + Utf8 [(Ljava/lang/String;)Lorg/json/JSONObject;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)V]
+  + Utf8 [(Ljava/util/List;)V]
+  + Utf8 [(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Lorg/apache/http/HttpEntity;)Ljava/lang/String;]
+  + Utf8 [(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;]
+  + Utf8 [([Landroid/location/Location;)Ljava/util/List;]
+  + Utf8 [([Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [,]
+  + Utf8 [3.0]
+  + Utf8 [8]
+  + Utf8 [<init>]
+  + Utf8 [ARExample]
+  + Utf8 [Code]
+  + Utf8 [D]
+  + Utf8 [Lcom/example/android/ar/CameraOverlayView;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [[Landroid/location/Location;]
+  + Utf8 [a]
+  + Utf8 [abort]
+  + Utf8 [add]
+  + Utf8 [android/location/Location]
+  + Utf8 [android/os/AsyncTask]
+  + Utf8 [android/util/Log]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/example/android/ar/CameraOverlayView]
+  + Utf8 [com/example/android/ar/ProximityObject]
+  + Utf8 [com/example/android/ar/ProximitySearchTask]
+  + Utf8 [d]
+  + Utf8 [doInBackground]
+  + Utf8 [execute]
+  + Utf8 [format]
+  + Utf8 [getDouble]
+  + Utf8 [getEntity]
+  + Utf8 [getJSONArray]
+  + Utf8 [getJSONObject]
+  + Utf8 [getLatitude]
+  + Utf8 [getLongitude]
+  + Utf8 [getString]
+  + Utf8 [getURI]
+  + Utf8 [hl]
+  + Utf8 [http://ajax.googleapis.com/ajax/services/search/local?]
+  + Utf8 [java/io/IOException]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/net/URI]
+  + Utf8 [java/util/ArrayList]
+  + Utf8 [java/util/List]
+  + Utf8 [jp]
+  + Utf8 [lat]
+  + Utf8 [length]
+  + Utf8 [lng]
+  + Utf8 [onPostExecute]
+  + Utf8 [org/apache/http/HttpResponse]
+  + Utf8 [org/apache/http/client/ClientProtocolException]
+  + Utf8 [org/apache/http/client/HttpClient]
+  + Utf8 [org/apache/http/client/methods/HttpGet]
+  + Utf8 [org/apache/http/client/utils/URLEncodedUtils]
+  + Utf8 [org/apache/http/impl/client/DefaultHttpClient]
+  + Utf8 [org/apache/http/message/BasicNameValuePair]
+  + Utf8 [org/apache/http/util/EntityUtils]
+  + Utf8 [org/json/JSONArray]
+  + Utf8 [org/json/JSONException]
+  + Utf8 [org/json/JSONObject]
+  + Utf8 [q]
+  + Utf8 [responseData]
+  + Utf8 [results]
+  + Utf8 [rsz]
+  + Utf8 [sll]
+  + Utf8 [titleNoFormatting]
+  + Utf8 [toString]
+  + Utf8 [url]
+  + Utf8 [utf-8]
+  + Utf8 [v]
+  + Utf8 [valueOf]
+  + Utf8 [レストラン]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/ar/CameraOverlayView;
+    Access flags: 0x2
+      = private com.example.android.ar.CameraOverlayView a
+
+Methods (count = 4):
+  - Method:       <init>(Lcom/example/android/ar/CameraOverlayView;)V
+    Access flags: 0x1
+      = public ProximitySearchTask(com.example.android.ar.CameraOverlayView)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #51
+        - Methodref [android/os/AsyncTask.<init> ()V]
+      [4] aload_0 v0
+      [5] aload_1 v1
+      [6] putfield #48
+        - Fieldref [com/example/android/ar/ProximitySearchTask.a Lcom/example/android/ar/CameraOverlayView;]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a([Landroid/location/Location;)Ljava/util/List;
+    Access flags: 0x8a
+      = private static java.util.List a(android.location.Location[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 375, locals = 7, stack = 8):
+      [0] aload_0 v0
+      [1] iconst_0
+      [2] aaload
+      [3] dup
+      [4] astore_0 v0
+      [5] invokevirtual #49
+        - Methodref [android/location/Location.getLatitude ()D]
+      [8] dstore_2 v2
+      [9] aload_0 v0
+      [10] invokevirtual #50
+        - Methodref [android/location/Location.getLongitude ()D]
+      [13] dstore v4
+      [15] new #31
+        - Class [java/util/ArrayList]
+      [18] dup
+      [19] invokespecial #62
+        - Methodref [java/util/ArrayList.<init> ()V]
+      [22] dup
+      [23] astore_0 v0
+      [24] new #39
+        - Class [org/apache/http/message/BasicNameValuePair]
+      [27] dup
+      [28] ldc #18
+        - String [v]
+      [30] ldc #2
+        - String [3.0]
+      [32] invokespecial #69
+        - Methodref [org/apache/http/message/BasicNameValuePair.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+      [35] invokeinterface #78
+        - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [40] pop
+      [41] aload_0 v0
+      [42] new #39
+        - Class [org/apache/http/message/BasicNameValuePair]
+      [45] dup
+      [46] ldc #5
+        - String [hl]
+      [48] ldc #7
+        - String [jp]
+      [50] invokespecial #69
+        - Methodref [org/apache/http/message/BasicNameValuePair.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+      [53] invokeinterface #78
+        - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [58] pop
+      [59] aload_0 v0
+      [60] new #39
+        - Class [org/apache/http/message/BasicNameValuePair]
+      [63] dup
+      [64] ldc #10
+        - String [q]
+      [66] ldc #19
+        - String [レストラン]
+      [68] invokespecial #69
+        - Methodref [org/apache/http/message/BasicNameValuePair.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+      [71] invokeinterface #78
+        - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [76] pop
+      [77] aload_0 v0
+      [78] new #39
+        - Class [org/apache/http/message/BasicNameValuePair]
+      [81] dup
+      [82] ldc #13
+        - String [rsz]
+      [84] ldc #3
+        - String [8]
+      [86] invokespecial #69
+        - Methodref [org/apache/http/message/BasicNameValuePair.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+      [89] invokeinterface #78
+        - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [94] pop
+      [95] aload_0 v0
+      [96] new #39
+        - Class [org/apache/http/message/BasicNameValuePair]
+      [99] dup
+      [100] ldc #14
+        - String [sll]
+      [102] new #29
+        - Class [java/lang/StringBuilder]
+      [105] dup
+      [106] dload_2 v2
+      [107] invokestatic #56
+        - Methodref [java/lang/String.valueOf (D)Ljava/lang/String;]
+      [110] invokespecial #57
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [113] ldc #1
+        - String [,]
+      [115] invokevirtual #59
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [118] dload v4
+      [120] invokevirtual #58
+        - Methodref [java/lang/StringBuilder.append (D)Ljava/lang/StringBuilder;]
+      [123] invokevirtual #60
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [126] invokespecial #69
+        - Methodref [org/apache/http/message/BasicNameValuePair.<init> (Ljava/lang/String;Ljava/lang/String;)V]
+      [129] invokeinterface #78
+        - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [134] pop
+      [135] aload_0 v0
+      [136] ldc #17
+        - String [utf-8]
+      [138] invokestatic #67
+        - Methodref [org/apache/http/client/utils/URLEncodedUtils.format (Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;]
+      [141] astore_0 v0
+      [142] new #36
+        - Class [org/apache/http/client/methods/HttpGet]
+      [145] dup
+      [146] new #29
+        - Class [java/lang/StringBuilder]
+      [149] dup
+      [150] ldc #6
+        - String [http://ajax.googleapis.com/ajax/services/search/local?]
+      [152] invokespecial #57
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [155] aload_0 v0
+      [156] invokevirtual #59
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [159] invokevirtual #60
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [162] invokespecial #64
+        - Methodref [org/apache/http/client/methods/HttpGet.<init> (Ljava/lang/String;)V]
+      [165] astore_0 v0
+      [166] ldc #4
+        - String [ARExample]
+      [168] aload_0 v0
+      [169] invokevirtual #66
+        - Methodref [org/apache/http/client/methods/HttpGet.getURI ()Ljava/net/URI;]
+      [172] invokevirtual #61
+        - Methodref [java/net/URI.toString ()Ljava/lang/String;]
+      [175] invokestatic #52
+        - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [178] pop
+      [179] new #38
+        - Class [org/apache/http/impl/client/DefaultHttpClient]
+      [182] dup
+      [183] invokespecial #68
+        - Methodref [org/apache/http/impl/client/DefaultHttpClient.<init> ()V]
+      [186] astore_1 v1
+      [187] aload_1 v1
+      [188] aload_0 v0
+      [189] invokeinterface #80
+        - InterfaceMethodref [org/apache/http/client/HttpClient.execute (Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;]
+      [194] invokeinterface #79
+        - InterfaceMethodref [org/apache/http/HttpResponse.getEntity ()Lorg/apache/http/HttpEntity;]
+      [199] invokestatic #70
+        - Methodref [org/apache/http/util/EntityUtils.toString (Lorg/apache/http/HttpEntity;)Ljava/lang/String;]
+      [202] astore_1 v1
+      [203] goto +17 (target=220)
+      [206] pop
+      [207] aload_0 v0
+      [208] invokevirtual #65
+        - Methodref [org/apache/http/client/methods/HttpGet.abort ()V]
+      [211] aconst_null
+      [212] areturn
+      [213] pop
+      [214] aload_0 v0
+      [215] invokevirtual #65
+        - Methodref [org/apache/http/client/methods/HttpGet.abort ()V]
+      [218] aconst_null
+      [219] areturn
+      [220] new #43
+        - Class [org/json/JSONObject]
+      [223] dup
+      [224] aload_1 v1
+      [225] invokespecial #73
+        - Methodref [org/json/JSONObject.<init> (Ljava/lang/String;)V]
+      [228] ldc #11
+        - String [responseData]
+      [230] invokevirtual #76
+        - Methodref [org/json/JSONObject.getJSONObject (Ljava/lang/String;)Lorg/json/JSONObject;]
+      [233] ldc #12
+        - String [results]
+      [235] invokevirtual #75
+        - Methodref [org/json/JSONObject.getJSONArray (Ljava/lang/String;)Lorg/json/JSONArray;]
+      [238] dup
+      [239] astore_2 v2
+      [240] invokevirtual #72
+        - Methodref [org/json/JSONArray.length ()I]
+      [243] istore_3 v3
+      [244] new #31
+        - Class [java/util/ArrayList]
+      [247] dup
+      [248] iload_3 v3
+      [249] invokespecial #63
+        - Methodref [java/util/ArrayList.<init> (I)V]
+      [252] astore_1 v1
+      [253] iconst_0
+      [254] istore v4
+      [256] goto +90 (target=346)
+      [259] aload_2 v2
+      [260] iload v4
+      [262] invokevirtual #71
+        - Methodref [org/json/JSONArray.getJSONObject (I)Lorg/json/JSONObject;]
+      [265] astore v5
+      [267] new #25
+        - Class [com/example/android/ar/ProximityObject]
+      [270] dup
+      [271] invokespecial #54
+        - Methodref [com/example/android/ar/ProximityObject.<init> ()V]
+      [274] dup
+      [275] astore v6
+      [277] aload v5
+      [279] ldc #15
+        - String [titleNoFormatting]
+      [281] invokevirtual #77
+        - Methodref [org/json/JSONObject.getString (Ljava/lang/String;)Ljava/lang/String;]
+      [284] putfield #46
+        - Fieldref [com/example/android/ar/ProximityObject.c Ljava/lang/String;]
+      [287] aload v6
+      [289] aload v5
+      [291] ldc #8
+        - String [lat]
+      [293] invokevirtual #74
+        - Methodref [org/json/JSONObject.getDouble (Ljava/lang/String;)D]
+      [296] putfield #44
+        - Fieldref [com/example/android/ar/ProximityObject.a D]
+      [299] aload v6
+      [301] aload v5
+      [303] ldc #9
+        - String [lng]
+      [305] invokevirtual #74
+        - Methodref [org/json/JSONObject.getDouble (Ljava/lang/String;)D]
+      [308] putfield #45
+        - Fieldref [com/example/android/ar/ProximityObject.b D]
+      [311] aload v6
+      [313] aload v5
+      [315] ldc #16
+        - String [url]
+      [317] invokevirtual #77
+        - Methodref [org/json/JSONObject.getString (Ljava/lang/String;)Ljava/lang/String;]
+      [320] putfield #47
+        - Fieldref [com/example/android/ar/ProximityObject.d Ljava/lang/String;]
+      [323] ldc #4
+        - String [ARExample]
+      [325] aload v6
+      [327] getfield #46
+        - Fieldref [com/example/android/ar/ProximityObject.c Ljava/lang/String;]
+      [330] invokestatic #52
+        - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [333] pop
+      [334] aload_1 v1
+      [335] aload v6
+      [337] invokeinterface #78
+        - InterfaceMethodref [java/util/List.add (Ljava/lang/Object;)Z]
+      [342] pop
+      [343] iinc v4, 1
+      [346] iload v4
+      [348] iload_3 v3
+      [349] ificmplt -90 (target=259)
+      [352] goto +17 (target=369)
+      [355] pop
+      [356] aload_0 v0
+      [357] invokevirtual #65
+        - Methodref [org/apache/http/client/methods/HttpGet.abort ()V]
+      [360] aconst_null
+      [361] areturn
+      [362] astore_1 v1
+      [363] aload_0 v0
+      [364] invokevirtual #65
+        - Methodref [org/apache/http/client/methods/HttpGet.abort ()V]
+      [367] aload_1 v1
+      [368] athrow
+      [369] aload_0 v0
+      [370] invokevirtual #65
+        - Methodref [org/apache/http/client/methods/HttpGet.abort ()V]
+      [373] aload_1 v1
+      [374] areturn
+      Code attribute exceptions (count = 4):
+      - ExceptionInfo (187 -> 203: 206):
+      - Class [org/apache/http/client/ClientProtocolException]
+      - ExceptionInfo (187 -> 203: 213):
+      - Class [java/io/IOException]
+      - ExceptionInfo (220 -> 352: 355):
+      - Class [org/json/JSONException]
+      - ExceptionInfo (220 -> 356: 362):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPostExecute(Ljava/lang/Object;)V
+    Access flags: 0x1044
+      = protected void onPostExecute(java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 20, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] checkcast #32
+        - Class [java/util/List]
+      [5] astore_2 v2
+      [6] astore_1 v1
+      [7] aload_2 v2
+      [8] ifnull +11 (target=19)
+      [11] aload_1 v1
+      [12] getfield #48
+        - Fieldref [com/example/android/ar/ProximitySearchTask.a Lcom/example/android/ar/CameraOverlayView;]
+      [15] aload_2 v2
+      [16] invokevirtual #53
+        - Methodref [com/example/android/ar/CameraOverlayView.a (Ljava/util/List;)V]
+      [19] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x10c4
+      = protected java.lang.Object doInBackground(java.lang.Object[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 8, locals = 2, stack = 1):
+      [0] aload_1 v1
+      [1] checkcast #20
+        - Class [[Landroid/location/Location;]
+      [4] invokestatic #55
+        - Methodref [com/example/android/ar/ProximitySearchTask.a ([Landroid/location/Location;)Ljava/util/List;]
+      [7] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/R$attr
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.example.android.ar.R$attr extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 12):
+  - Class [com/example/android/ar/R]
+  - Class [com/example/android/ar/R$attr]
+  - Class [java/lang/Object]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + Utf8 [()V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [com/example/android/ar/R]
+  + Utf8 [com/example/android/ar/R$attr]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public R$attr()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/R$drawable
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.example.android.ar.R$drawable extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 12):
+  - Class [com/example/android/ar/R]
+  - Class [com/example/android/ar/R$drawable]
+  - Class [java/lang/Object]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + Utf8 [()V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [com/example/android/ar/R]
+  + Utf8 [com/example/android/ar/R$drawable]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public R$drawable()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/R
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.example.android.ar.R extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 20):
+  - Class [com/example/android/ar/R]
+  - Class [com/example/android/ar/R$attr]
+  - Class [com/example/android/ar/R$drawable]
+  - Class [com/example/android/ar/R$id]
+  - Class [com/example/android/ar/R$layout]
+  - Class [com/example/android/ar/R$string]
+  - Class [java/lang/Object]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + Utf8 [()V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [com/example/android/ar/R]
+  + Utf8 [com/example/android/ar/R$attr]
+  + Utf8 [com/example/android/ar/R$drawable]
+  + Utf8 [com/example/android/ar/R$id]
+  + Utf8 [com/example/android/ar/R$layout]
+  + Utf8 [com/example/android/ar/R$string]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public R()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #8
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/R$layout
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.example.android.ar.R$layout extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 12):
+  - Class [com/example/android/ar/R]
+  - Class [com/example/android/ar/R$layout]
+  - Class [java/lang/Object]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + Utf8 [()V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [com/example/android/ar/R]
+  + Utf8 [com/example/android/ar/R$layout]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public R$layout()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/MyActivity$3
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.ar.MyActivity$3 extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/location/LocationListener]
+
+Constant Pool (count = 54):
+  - Float [100.0]
+  - Class [android/location/Location]
+  - Class [android/location/LocationListener]
+  - Class [android/location/LocationManager]
+  - Class [com/example/android/ar/CameraOverlayView]
+  - Class [com/example/android/ar/MyActivity]
+  - Class [com/example/android/ar/MyActivity$3]
+  - Class [java/lang/Object]
+  - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+  - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+  - Fieldref [com/example/android/ar/MyActivity.d Landroid/location/LocationListener;]
+  - Fieldref [com/example/android/ar/MyActivity$3.a Lcom/example/android/ar/MyActivity;]
+  - Methodref [android/location/Location.getAccuracy ()F]
+  - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+  - Methodref [com/example/android/ar/CameraOverlayView.a (Landroid/location/Location;)V]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/location/Location;)V]
+  + NameAndType [a Lcom/example/android/ar/CameraOverlayView;]
+  + NameAndType [a Lcom/example/android/ar/MyActivity;]
+  + NameAndType [b Landroid/location/LocationManager;]
+  + NameAndType [d Landroid/location/LocationListener;]
+  + NameAndType [getAccuracy ()F]
+  + NameAndType [removeUpdates (Landroid/location/LocationListener;)V]
+  + Utf8 [()F]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/location/Location;)V]
+  + Utf8 [(Landroid/location/LocationListener;)V]
+  + Utf8 [(Lcom/example/android/ar/MyActivity;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;ILandroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/location/LocationListener;]
+  + Utf8 [Landroid/location/LocationManager;]
+  + Utf8 [Lcom/example/android/ar/CameraOverlayView;]
+  + Utf8 [Lcom/example/android/ar/MyActivity;]
+  + Utf8 [a]
+  + Utf8 [android/location/Location]
+  + Utf8 [android/location/LocationListener]
+  + Utf8 [android/location/LocationManager]
+  + Utf8 [b]
+  + Utf8 [com/example/android/ar/CameraOverlayView]
+  + Utf8 [com/example/android/ar/MyActivity]
+  + Utf8 [com/example/android/ar/MyActivity$3]
+  + Utf8 [d]
+  + Utf8 [getAccuracy]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onLocationChanged]
+  + Utf8 [onProviderDisabled]
+  + Utf8 [onProviderEnabled]
+  + Utf8 [onStatusChanged]
+  + Utf8 [removeUpdates]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/ar/MyActivity;
+    Access flags: 0x1002
+      = private com.example.android.ar.MyActivity a
+
+Methods (count = 5):
+  - Method:       <init>(Lcom/example/android/ar/MyActivity;)V
+    Access flags: 0x0
+      = MyActivity$3(com.example.android.ar.MyActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #12
+        - Fieldref [com/example/android/ar/MyActivity$3.a Lcom/example/android/ar/MyActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #16
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onStatusChanged(java.lang.String,int,android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 4, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onProviderEnabled(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void onProviderEnabled(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 2, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onProviderDisabled(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void onProviderDisabled(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 2, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onLocationChanged(Landroid/location/Location;)V
+    Access flags: 0x1
+      = public void onLocationChanged(android.location.Location)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 39, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #12
+        - Fieldref [com/example/android/ar/MyActivity$3.a Lcom/example/android/ar/MyActivity;]
+      [4] getfield #9
+        - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+      [7] aload_1 v1
+      [8] invokevirtual #15
+        - Methodref [com/example/android/ar/CameraOverlayView.a (Landroid/location/Location;)V]
+      [11] aload_1 v1
+      [12] invokevirtual #13
+        - Methodref [android/location/Location.getAccuracy ()F]
+      [15] ldc #1
+        - Float [100.0]
+      [17] fcmpg
+      [18] ifge +20 (target=38)
+      [21] aload_0 v0
+      [22] getfield #12
+        - Fieldref [com/example/android/ar/MyActivity$3.a Lcom/example/android/ar/MyActivity;]
+      [25] getfield #10
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [28] aload_0 v0
+      [29] getfield #12
+        - Fieldref [com/example/android/ar/MyActivity$3.a Lcom/example/android/ar/MyActivity;]
+      [32] getfield #11
+        - Fieldref [com/example/android/ar/MyActivity.d Landroid/location/LocationListener;]
+      [35] invokevirtual #14
+        - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+      [38] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/MyActivity$2
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.ar.MyActivity$2 extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/location/LocationListener]
+
+Constant Pool (count = 57):
+  - Float [100.0]
+  - Class [android/location/Location]
+  - Class [android/location/LocationListener]
+  - Class [android/location/LocationManager]
+  - Class [com/example/android/ar/CameraOverlayView]
+  - Class [com/example/android/ar/MyActivity]
+  - Class [com/example/android/ar/MyActivity$2]
+  - Class [java/lang/Object]
+  - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+  - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+  - Fieldref [com/example/android/ar/MyActivity.c Landroid/location/LocationListener;]
+  - Fieldref [com/example/android/ar/MyActivity.d Landroid/location/LocationListener;]
+  - Fieldref [com/example/android/ar/MyActivity$2.a Lcom/example/android/ar/MyActivity;]
+  - Methodref [android/location/Location.getAccuracy ()F]
+  - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+  - Methodref [com/example/android/ar/CameraOverlayView.a (Landroid/location/Location;)V]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/location/Location;)V]
+  + NameAndType [a Lcom/example/android/ar/CameraOverlayView;]
+  + NameAndType [a Lcom/example/android/ar/MyActivity;]
+  + NameAndType [b Landroid/location/LocationManager;]
+  + NameAndType [c Landroid/location/LocationListener;]
+  + NameAndType [d Landroid/location/LocationListener;]
+  + NameAndType [getAccuracy ()F]
+  + NameAndType [removeUpdates (Landroid/location/LocationListener;)V]
+  + Utf8 [()F]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/location/Location;)V]
+  + Utf8 [(Landroid/location/LocationListener;)V]
+  + Utf8 [(Lcom/example/android/ar/MyActivity;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;ILandroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/location/LocationListener;]
+  + Utf8 [Landroid/location/LocationManager;]
+  + Utf8 [Lcom/example/android/ar/CameraOverlayView;]
+  + Utf8 [Lcom/example/android/ar/MyActivity;]
+  + Utf8 [a]
+  + Utf8 [android/location/Location]
+  + Utf8 [android/location/LocationListener]
+  + Utf8 [android/location/LocationManager]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/example/android/ar/CameraOverlayView]
+  + Utf8 [com/example/android/ar/MyActivity]
+  + Utf8 [com/example/android/ar/MyActivity$2]
+  + Utf8 [d]
+  + Utf8 [getAccuracy]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onLocationChanged]
+  + Utf8 [onProviderDisabled]
+  + Utf8 [onProviderEnabled]
+  + Utf8 [onStatusChanged]
+  + Utf8 [removeUpdates]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/ar/MyActivity;
+    Access flags: 0x1002
+      = private com.example.android.ar.MyActivity a
+
+Methods (count = 5):
+  - Method:       <init>(Lcom/example/android/ar/MyActivity;)V
+    Access flags: 0x0
+      = MyActivity$2(com.example.android.ar.MyActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #13
+        - Fieldref [com/example/android/ar/MyActivity$2.a Lcom/example/android/ar/MyActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #17
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onStatusChanged(java.lang.String,int,android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 4, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onProviderEnabled(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void onProviderEnabled(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 2, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onProviderDisabled(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void onProviderDisabled(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 2, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onLocationChanged(Landroid/location/Location;)V
+    Access flags: 0x1
+      = public void onLocationChanged(android.location.Location)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 56, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #13
+        - Fieldref [com/example/android/ar/MyActivity$2.a Lcom/example/android/ar/MyActivity;]
+      [4] getfield #9
+        - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+      [7] aload_1 v1
+      [8] invokevirtual #16
+        - Methodref [com/example/android/ar/CameraOverlayView.a (Landroid/location/Location;)V]
+      [11] aload_1 v1
+      [12] invokevirtual #14
+        - Methodref [android/location/Location.getAccuracy ()F]
+      [15] ldc #1
+        - Float [100.0]
+      [17] fcmpg
+      [18] ifge +37 (target=55)
+      [21] aload_0 v0
+      [22] getfield #13
+        - Fieldref [com/example/android/ar/MyActivity$2.a Lcom/example/android/ar/MyActivity;]
+      [25] getfield #10
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [28] aload_0 v0
+      [29] getfield #13
+        - Fieldref [com/example/android/ar/MyActivity$2.a Lcom/example/android/ar/MyActivity;]
+      [32] getfield #11
+        - Fieldref [com/example/android/ar/MyActivity.c Landroid/location/LocationListener;]
+      [35] invokevirtual #15
+        - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+      [38] aload_0 v0
+      [39] getfield #13
+        - Fieldref [com/example/android/ar/MyActivity$2.a Lcom/example/android/ar/MyActivity;]
+      [42] getfield #10
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [45] aload_0 v0
+      [46] getfield #13
+        - Fieldref [com/example/android/ar/MyActivity$2.a Lcom/example/android/ar/MyActivity;]
+      [49] getfield #12
+        - Fieldref [com/example/android/ar/MyActivity.d Landroid/location/LocationListener;]
+      [52] invokevirtual #15
+        - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+      [55] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/R$string
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x31
+    = public final class com.example.android.ar.R$string extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 12):
+  - Class [com/example/android/ar/R]
+  - Class [com/example/android/ar/R$string]
+  - Class [java/lang/Object]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + Utf8 [()V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [com/example/android/ar/R]
+  + Utf8 [com/example/android/ar/R$string]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 0):
+
+Methods (count = 1):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public R$string()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #4
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/MyActivity
+  Superclass:    android/app/Activity
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.ar.MyActivity extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 150):
+  - Integer [2130903040]
+  - Integer [2131034112]
+  - Float [100.0]
+  - String [ARExample]
+  - String [bestProvider=]
+  - String [coarseProvider=]
+  - String [location]
+  - String [sensor]
+  - Class [android/app/Activity]
+  - Class [android/hardware/SensorManager]
+  - Class [android/location/Criteria]
+  - Class [android/location/LocationManager]
+  - Class [android/util/Log]
+  - Class [com/example/android/ar/CameraOverlayView]
+  - Class [com/example/android/ar/MyActivity]
+  - Class [com/example/android/ar/MyActivity$1]
+  - Class [com/example/android/ar/MyActivity$2]
+  - Class [com/example/android/ar/MyActivity$3]
+  - Class [com/example/android/ar/OrientationListener]
+  - Class [java/lang/StringBuilder]
+  - Long [60000]
+  - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+  - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+  - Fieldref [com/example/android/ar/MyActivity.c Landroid/location/LocationListener;]
+  - Fieldref [com/example/android/ar/MyActivity.d Landroid/location/LocationListener;]
+  - Fieldref [com/example/android/ar/MyActivity.e Lcom/example/android/ar/OrientationListener;]
+  - Fieldref [com/example/android/ar/MyActivity.f Z]
+  - Fieldref [com/example/android/ar/MyActivity.g Landroid/hardware/SensorManager;]
+  - Fieldref [com/example/android/ar/MyActivity.h Landroid/location/LocationListener;]
+  - Methodref [android/app/Activity.<init> ()V]
+  - Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  - Methodref [android/app/Activity.onPause ()V]
+  - Methodref [android/app/Activity.onResume ()V]
+  - Methodref [android/hardware/SensorManager.getDefaultSensor (I)Landroid/hardware/Sensor;]
+  - Methodref [android/hardware/SensorManager.registerListener (Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z]
+  - Methodref [android/hardware/SensorManager.unregisterListener (Landroid/hardware/SensorEventListener;)V]
+  - Methodref [android/location/Criteria.<init> ()V]
+  - Methodref [android/location/Criteria.setAccuracy (I)V]
+  - Methodref [android/location/Criteria.setPowerRequirement (I)V]
+  - Methodref [android/location/LocationManager.getBestProvider (Landroid/location/Criteria;Z)Ljava/lang/String;]
+  - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+  - Methodref [android/location/LocationManager.requestLocationUpdates (Ljava/lang/String;JFLandroid/location/LocationListener;)V]
+  - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+  - Methodref [com/example/android/ar/MyActivity.findViewById (I)Landroid/view/View;]
+  - Methodref [com/example/android/ar/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  - Methodref [com/example/android/ar/MyActivity.setContentView (I)V]
+  - Methodref [com/example/android/ar/MyActivity$1.<init> (Lcom/example/android/ar/MyActivity;)V]
+  - Methodref [com/example/android/ar/MyActivity$2.<init> (Lcom/example/android/ar/MyActivity;)V]
+  - Methodref [com/example/android/ar/MyActivity$3.<init> (Lcom/example/android/ar/MyActivity;)V]
+  - Methodref [com/example/android/ar/OrientationListener.<init> (Lcom/example/android/ar/CameraOverlayView;)V]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lcom/example/android/ar/CameraOverlayView;)V]
+  + NameAndType [<init> (Lcom/example/android/ar/MyActivity;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a Lcom/example/android/ar/CameraOverlayView;]
+  + NameAndType [append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + NameAndType [b Landroid/location/LocationManager;]
+  + NameAndType [c Landroid/location/LocationListener;]
+  + NameAndType [d (Ljava/lang/String;Ljava/lang/String;)I]
+  + NameAndType [d Landroid/location/LocationListener;]
+  + NameAndType [e Lcom/example/android/ar/OrientationListener;]
+  + NameAndType [f Z]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [g Landroid/hardware/SensorManager;]
+  + NameAndType [getBestProvider (Landroid/location/Criteria;Z)Ljava/lang/String;]
+  + NameAndType [getDefaultSensor (I)Landroid/hardware/Sensor;]
+  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [h Landroid/location/LocationListener;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onPause ()V]
+  + NameAndType [onResume ()V]
+  + NameAndType [registerListener (Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z]
+  + NameAndType [removeUpdates (Landroid/location/LocationListener;)V]
+  + NameAndType [requestLocationUpdates (Ljava/lang/String;JFLandroid/location/LocationListener;)V]
+  + NameAndType [setAccuracy (I)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setPowerRequirement (I)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [unregisterListener (Landroid/hardware/SensorEventListener;)V]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/hardware/Sensor;]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/hardware/SensorEventListener;)V]
+  + Utf8 [(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z]
+  + Utf8 [(Landroid/location/Criteria;Z)Ljava/lang/String;]
+  + Utf8 [(Landroid/location/LocationListener;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Lcom/example/android/ar/CameraOverlayView;)V]
+  + Utf8 [(Lcom/example/android/ar/MyActivity;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/StringBuilder;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;JFLandroid/location/LocationListener;)V]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [<init>]
+  + Utf8 [ARExample]
+  + Utf8 [Code]
+  + Utf8 [Landroid/hardware/SensorManager;]
+  + Utf8 [Landroid/location/LocationListener;]
+  + Utf8 [Landroid/location/LocationManager;]
+  + Utf8 [Lcom/example/android/ar/CameraOverlayView;]
+  + Utf8 [Lcom/example/android/ar/OrientationListener;]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/hardware/SensorManager]
+  + Utf8 [android/location/Criteria]
+  + Utf8 [android/location/LocationManager]
+  + Utf8 [android/util/Log]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [bestProvider=]
+  + Utf8 [c]
+  + Utf8 [coarseProvider=]
+  + Utf8 [com/example/android/ar/CameraOverlayView]
+  + Utf8 [com/example/android/ar/MyActivity]
+  + Utf8 [com/example/android/ar/MyActivity$1]
+  + Utf8 [com/example/android/ar/MyActivity$2]
+  + Utf8 [com/example/android/ar/MyActivity$3]
+  + Utf8 [com/example/android/ar/OrientationListener]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [findViewById]
+  + Utf8 [g]
+  + Utf8 [getBestProvider]
+  + Utf8 [getDefaultSensor]
+  + Utf8 [getSystemService]
+  + Utf8 [h]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [location]
+  + Utf8 [onCreate]
+  + Utf8 [onPause]
+  + Utf8 [onResume]
+  + Utf8 [registerListener]
+  + Utf8 [removeUpdates]
+  + Utf8 [requestLocationUpdates]
+  + Utf8 [sensor]
+  + Utf8 [setAccuracy]
+  + Utf8 [setContentView]
+  + Utf8 [setPowerRequirement]
+  + Utf8 [toString]
+  + Utf8 [unregisterListener]
+
+Fields (count = 8):
+  + Field:        a Lcom/example/android/ar/CameraOverlayView;
+    Access flags: 0x0
+      = com.example.android.ar.CameraOverlayView a
+  + Field:        e Lcom/example/android/ar/OrientationListener;
+    Access flags: 0x2
+      = private com.example.android.ar.OrientationListener e
+  + Field:        f Z
+    Access flags: 0x2
+      = private boolean f
+  + Field:        g Landroid/hardware/SensorManager;
+    Access flags: 0x2
+      = private android.hardware.SensorManager g
+  + Field:        b Landroid/location/LocationManager;
+    Access flags: 0x0
+      = android.location.LocationManager b
+  + Field:        h Landroid/location/LocationListener;
+    Access flags: 0x2
+      = private android.location.LocationListener h
+  + Field:        c Landroid/location/LocationListener;
+    Access flags: 0x0
+      = android.location.LocationListener c
+  + Field:        d Landroid/location/LocationListener;
+    Access flags: 0x0
+      = android.location.LocationListener d
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public MyActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 41, locals = 1, stack = 4):
+      [0] aload_0 v0
+      [1] invokespecial #31
+        - Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] new #16
+        - Class [com/example/android/ar/MyActivity$1]
+      [8] dup
+      [9] aload_0 v0
+      [10] invokespecial #48
+        - Methodref [com/example/android/ar/MyActivity$1.<init> (Lcom/example/android/ar/MyActivity;)V]
+      [13] putfield #30
+        - Fieldref [com/example/android/ar/MyActivity.h Landroid/location/LocationListener;]
+      [16] aload_0 v0
+      [17] new #17
+        - Class [com/example/android/ar/MyActivity$2]
+      [20] dup
+      [21] aload_0 v0
+      [22] invokespecial #49
+        - Methodref [com/example/android/ar/MyActivity$2.<init> (Lcom/example/android/ar/MyActivity;)V]
+      [25] putfield #25
+        - Fieldref [com/example/android/ar/MyActivity.c Landroid/location/LocationListener;]
+      [28] aload_0 v0
+      [29] new #18
+        - Class [com/example/android/ar/MyActivity$3]
+      [32] dup
+      [33] aload_0 v0
+      [34] invokespecial #50
+        - Methodref [com/example/android/ar/MyActivity$3.<init> (Lcom/example/android/ar/MyActivity;)V]
+      [37] putfield #26
+        - Fieldref [com/example/android/ar/MyActivity.d Landroid/location/LocationListener;]
+      [40] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 66, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #32
+        - Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        - Integer [2130903040]
+      [8] invokevirtual #47
+        - Methodref [com/example/android/ar/MyActivity.setContentView (I)V]
+      [11] aload_0 v0
+      [12] aload_0 v0
+      [13] ldc #8
+        - String [sensor]
+      [15] invokevirtual #46
+        - Methodref [com/example/android/ar/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [18] checkcast #10
+        - Class [android/hardware/SensorManager]
+      [21] putfield #29
+        - Fieldref [com/example/android/ar/MyActivity.g Landroid/hardware/SensorManager;]
+      [24] aload_0 v0
+      [25] aload_0 v0
+      [26] ldc #2
+        - Integer [2131034112]
+      [28] invokevirtual #45
+        - Methodref [com/example/android/ar/MyActivity.findViewById (I)Landroid/view/View;]
+      [31] checkcast #14
+        - Class [com/example/android/ar/CameraOverlayView]
+      [34] putfield #23
+        - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+      [37] aload_0 v0
+      [38] new #19
+        - Class [com/example/android/ar/OrientationListener]
+      [41] dup
+      [42] aload_0 v0
+      [43] getfield #23
+        - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+      [46] invokespecial #51
+        - Methodref [com/example/android/ar/OrientationListener.<init> (Lcom/example/android/ar/CameraOverlayView;)V]
+      [49] putfield #27
+        - Fieldref [com/example/android/ar/MyActivity.e Lcom/example/android/ar/OrientationListener;]
+      [52] aload_0 v0
+      [53] aload_0 v0
+      [54] ldc #7
+        - String [location]
+      [56] invokevirtual #46
+        - Methodref [com/example/android/ar/MyActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [59] checkcast #12
+        - Class [android/location/LocationManager]
+      [62] putfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [65] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onResume()V
+    Access flags: 0x4
+      = protected void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 207, locals = 3, stack = 6):
+      [0] aload_0 v0
+      [1] invokespecial #34
+        - Methodref [android/app/Activity.onResume ()V]
+      [4] aload_0 v0
+      [5] getfield #29
+        - Fieldref [com/example/android/ar/MyActivity.g Landroid/hardware/SensorManager;]
+      [8] iconst_2
+      [9] invokevirtual #35
+        - Methodref [android/hardware/SensorManager.getDefaultSensor (I)Landroid/hardware/Sensor;]
+      [12] dup
+      [13] astore_1 v1
+      [14] ifnull +25 (target=39)
+      [17] aload_0 v0
+      [18] dup
+      [19] getfield #28
+        - Fieldref [com/example/android/ar/MyActivity.f Z]
+      [22] aload_0 v0
+      [23] getfield #29
+        - Fieldref [com/example/android/ar/MyActivity.g Landroid/hardware/SensorManager;]
+      [26] aload_0 v0
+      [27] getfield #27
+        - Fieldref [com/example/android/ar/MyActivity.e Lcom/example/android/ar/OrientationListener;]
+      [30] aload_1 v1
+      [31] iconst_2
+      [32] invokevirtual #36
+        - Methodref [android/hardware/SensorManager.registerListener (Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z]
+      [35] ior
+      [36] putfield #28
+        - Fieldref [com/example/android/ar/MyActivity.f Z]
+      [39] aload_0 v0
+      [40] getfield #29
+        - Fieldref [com/example/android/ar/MyActivity.g Landroid/hardware/SensorManager;]
+      [43] iconst_1
+      [44] invokevirtual #35
+        - Methodref [android/hardware/SensorManager.getDefaultSensor (I)Landroid/hardware/Sensor;]
+      [47] dup
+      [48] astore_1 v1
+      [49] ifnull +25 (target=74)
+      [52] aload_0 v0
+      [53] dup
+      [54] getfield #28
+        - Fieldref [com/example/android/ar/MyActivity.f Z]
+      [57] aload_0 v0
+      [58] getfield #29
+        - Fieldref [com/example/android/ar/MyActivity.g Landroid/hardware/SensorManager;]
+      [61] aload_0 v0
+      [62] getfield #27
+        - Fieldref [com/example/android/ar/MyActivity.e Lcom/example/android/ar/OrientationListener;]
+      [65] aload_1 v1
+      [66] iconst_2
+      [67] invokevirtual #36
+        - Methodref [android/hardware/SensorManager.registerListener (Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z]
+      [70] ior
+      [71] putfield #28
+        - Fieldref [com/example/android/ar/MyActivity.f Z]
+      [74] new #11
+        - Class [android/location/Criteria]
+      [77] dup
+      [78] invokespecial #38
+        - Methodref [android/location/Criteria.<init> ()V]
+      [81] dup
+      [82] astore_1 v1
+      [83] iconst_1
+      [84] invokevirtual #40
+        - Methodref [android/location/Criteria.setPowerRequirement (I)V]
+      [87] aload_1 v1
+      [88] iconst_1
+      [89] invokevirtual #39
+        - Methodref [android/location/Criteria.setAccuracy (I)V]
+      [92] aload_0 v0
+      [93] getfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [96] aload_1 v1
+      [97] iconst_1
+      [98] invokevirtual #41
+        - Methodref [android/location/LocationManager.getBestProvider (Landroid/location/Criteria;Z)Ljava/lang/String;]
+      [101] astore_2 v2
+      [102] aload_1 v1
+      [103] iconst_2
+      [104] invokevirtual #39
+        - Methodref [android/location/Criteria.setAccuracy (I)V]
+      [107] aload_0 v0
+      [108] getfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [111] aload_1 v1
+      [112] iconst_1
+      [113] invokevirtual #41
+        - Methodref [android/location/LocationManager.getBestProvider (Landroid/location/Criteria;Z)Ljava/lang/String;]
+      [116] astore_1 v1
+      [117] aload_0 v0
+      [118] getfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [121] aload_2 v2
+      [122] ldc2_w #21
+        - Long [60000]
+      [125] ldc #3
+        - Float [100.0]
+      [127] aload_0 v0
+      [128] getfield #30
+        - Fieldref [com/example/android/ar/MyActivity.h Landroid/location/LocationListener;]
+      [131] invokevirtual #43
+        - Methodref [android/location/LocationManager.requestLocationUpdates (Ljava/lang/String;JFLandroid/location/LocationListener;)V]
+      [134] aload_0 v0
+      [135] getfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [138] aload_1 v1
+      [139] lconst_0
+      [140] fconst_0
+      [141] aload_0 v0
+      [142] getfield #26
+        - Fieldref [com/example/android/ar/MyActivity.d Landroid/location/LocationListener;]
+      [145] invokevirtual #43
+        - Methodref [android/location/LocationManager.requestLocationUpdates (Ljava/lang/String;JFLandroid/location/LocationListener;)V]
+      [148] aload_0 v0
+      [149] getfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [152] aload_2 v2
+      [153] lconst_0
+      [154] fconst_0
+      [155] aload_0 v0
+      [156] getfield #25
+        - Fieldref [com/example/android/ar/MyActivity.c Landroid/location/LocationListener;]
+      [159] invokevirtual #43
+        - Methodref [android/location/LocationManager.requestLocationUpdates (Ljava/lang/String;JFLandroid/location/LocationListener;)V]
+      [162] ldc #4
+        - String [ARExample]
+      [164] new #20
+        - Class [java/lang/StringBuilder]
+      [167] dup
+      [168] ldc #5
+        - String [bestProvider=]
+      [170] invokespecial #52
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [173] aload_2 v2
+      [174] invokevirtual #53
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [177] invokevirtual #54
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [180] invokestatic #44
+        - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [183] pop
+      [184] ldc #4
+        - String [ARExample]
+      [186] new #20
+        - Class [java/lang/StringBuilder]
+      [189] dup
+      [190] ldc #6
+        - String [coarseProvider=]
+      [192] invokespecial #52
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [195] aload_1 v1
+      [196] invokevirtual #53
+        - Methodref [java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;]
+      [199] invokevirtual #54
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [202] invokestatic #44
+        - Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
+      [205] pop
+      [206] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPause()V
+    Access flags: 0x4
+      = protected void onPause()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 61, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #33
+        - Methodref [android/app/Activity.onPause ()V]
+      [4] aload_0 v0
+      [5] getfield #28
+        - Fieldref [com/example/android/ar/MyActivity.f Z]
+      [8] ifeq +14 (target=22)
+      [11] aload_0 v0
+      [12] getfield #29
+        - Fieldref [com/example/android/ar/MyActivity.g Landroid/hardware/SensorManager;]
+      [15] aload_0 v0
+      [16] getfield #27
+        - Fieldref [com/example/android/ar/MyActivity.e Lcom/example/android/ar/OrientationListener;]
+      [19] invokevirtual #37
+        - Methodref [android/hardware/SensorManager.unregisterListener (Landroid/hardware/SensorEventListener;)V]
+      [22] aload_0 v0
+      [23] iconst_0
+      [24] putfield #28
+        - Fieldref [com/example/android/ar/MyActivity.f Z]
+      [27] aload_0 v0
+      [28] getfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [31] aload_0 v0
+      [32] getfield #30
+        - Fieldref [com/example/android/ar/MyActivity.h Landroid/location/LocationListener;]
+      [35] invokevirtual #42
+        - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+      [38] aload_0 v0
+      [39] getfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [42] aload_0 v0
+      [43] getfield #26
+        - Fieldref [com/example/android/ar/MyActivity.d Landroid/location/LocationListener;]
+      [46] invokevirtual #42
+        - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+      [49] aload_0 v0
+      [50] getfield #24
+        - Fieldref [com/example/android/ar/MyActivity.b Landroid/location/LocationManager;]
+      [53] aload_0 v0
+      [54] getfield #25
+        - Fieldref [com/example/android/ar/MyActivity.c Landroid/location/LocationListener;]
+      [57] invokevirtual #42
+        - Methodref [android/location/LocationManager.removeUpdates (Landroid/location/LocationListener;)V]
+      [60] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/CameraOverlayView
+  Superclass:    android/view/View
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.ar.CameraOverlayView extends android.view.View
+
+Interfaces (count = 0):
+
+Constant Pool (count = 286):
+  - Integer [-16711936]
+  - Integer [2130837504]
+  - Float [5.0]
+  - Float [8.0]
+  - Float [12.0]
+  - Float [24.0]
+  - Float [40.0]
+  - Float [70.0]
+  - Float [100.0]
+  - Float [130.0]
+  - Float [160.0]
+  - String [Azimuth:]
+  - String [Latitude:]
+  - String [Longitude:]
+  - String [Pitch:]
+  - String [Roll:]
+  - String [android.intent.action.VIEW]
+  - Class [android/content/Context]
+  - Class [android/content/Intent]
+  - Class [android/graphics/Bitmap]
+  - Class [android/graphics/BitmapFactory]
+  - Class [android/graphics/Canvas]
+  - Class [android/graphics/Paint]
+  - Class [android/graphics/Rect]
+  - Class [android/location/Location]
+  - Class [android/net/Uri]
+  - Class [android/view/MotionEvent]
+  - Class [android/view/View]
+  - Class [com/example/android/ar/CameraOverlayView]
+  - Class [com/example/android/ar/ProximityObject]
+  - Class [com/example/android/ar/ProximitySearchTask]
+  - Class [java/lang/Math]
+  - Class [java/lang/StringBuilder]
+  - Class [java/util/Iterator]
+  - Class [java/util/List]
+  - Class [java/util/concurrent/CopyOnWriteArrayList]
+  - Double [0.9]
+  - Double [72.0]
+  - Fieldref [android/graphics/Rect.bottom I]
+  - Fieldref [android/graphics/Rect.left I]
+  - Fieldref [android/graphics/Rect.top I]
+  - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+  - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+  - Fieldref [com/example/android/ar/CameraOverlayView.c Landroid/graphics/Paint;]
+  - Fieldref [com/example/android/ar/CameraOverlayView.d Landroid/location/Location;]
+  - Fieldref [com/example/android/ar/CameraOverlayView.e Ljava/util/List;]
+  - Fieldref [com/example/android/ar/CameraOverlayView.f F]
+  - Fieldref [com/example/android/ar/CameraOverlayView.g F]
+  - Fieldref [com/example/android/ar/CameraOverlayView.h F]
+  - Fieldref [com/example/android/ar/ProximityObject.a D]
+  - Fieldref [com/example/android/ar/ProximityObject.b D]
+  - Fieldref [com/example/android/ar/ProximityObject.c Ljava/lang/String;]
+  - Fieldref [com/example/android/ar/ProximityObject.d Ljava/lang/String;]
+  - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+  - Fieldref [com/example/android/ar/ProximityObject.f Z]
+  - Methodref [android/content/Context.startActivity (Landroid/content/Intent;)V]
+  - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  - Methodref [android/graphics/Bitmap.getHeight ()I]
+  - Methodref [android/graphics/Bitmap.getWidth ()I]
+  - Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+  - Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V]
+  - Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  - Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+  - Methodref [android/graphics/Canvas.getHeight ()I]
+  - Methodref [android/graphics/Canvas.getWidth ()I]
+  - Methodref [android/graphics/Paint.<init> ()V]
+  - Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+  - Methodref [android/graphics/Paint.setColor (I)V]
+  - Methodref [android/graphics/Paint.setTextSize (F)V]
+  - Methodref [android/graphics/Rect.<init> (IIII)V]
+  - Methodref [android/graphics/Rect.contains (II)Z]
+  - Methodref [android/graphics/Rect.set (IIII)V]
+  - Methodref [android/location/Location.distanceBetween (DDDD[F)V]
+  - Methodref [android/location/Location.getLatitude ()D]
+  - Methodref [android/location/Location.getLongitude ()D]
+  - Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+  - Methodref [android/view/MotionEvent.getAction ()I]
+  - Methodref [android/view/MotionEvent.getX ()F]
+  - Methodref [android/view/MotionEvent.getY ()F]
+  - Methodref [android/view/View.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  - Methodref [android/view/View.<init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V]
+  - Methodref [android/view/View.onDraw (Landroid/graphics/Canvas;)V]
+  - Methodref [android/view/View.onTouchEvent (Landroid/view/MotionEvent;)Z]
+  - Methodref [com/example/android/ar/CameraOverlayView.a ()V]
+  - Methodref [com/example/android/ar/CameraOverlayView.b ()V]
+  - Methodref [com/example/android/ar/CameraOverlayView.getContext ()Landroid/content/Context;]
+  - Methodref [com/example/android/ar/CameraOverlayView.getHeight ()I]
+  - Methodref [com/example/android/ar/CameraOverlayView.getResources ()Landroid/content/res/Resources;]
+  - Methodref [com/example/android/ar/CameraOverlayView.getWidth ()I]
+  - Methodref [com/example/android/ar/CameraOverlayView.invalidate ()V]
+  - Methodref [com/example/android/ar/ProximitySearchTask.<init> (Lcom/example/android/ar/CameraOverlayView;)V]
+  - Methodref [com/example/android/ar/ProximitySearchTask.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  - Methodref [java/lang/Math.cos (D)D]
+  - Methodref [java/lang/Math.toDegrees (D)D]
+  - Methodref [java/lang/Math.toRadians (D)D]
+  - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+  - Methodref [java/lang/StringBuilder.append (D)Ljava/lang/StringBuilder;]
+  - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+  - Methodref [java/util/concurrent/CopyOnWriteArrayList.<init> ()V]
+  - InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+  - InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+  - InterfaceMethodref [java/util/List.addAll (Ljava/util/Collection;)Z]
+  - InterfaceMethodref [java/util/List.clear ()V]
+  - InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (IIII)V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + NameAndType [<init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V]
+  + NameAndType [<init> (Lcom/example/android/ar/CameraOverlayView;)V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+  + NameAndType [a ()V]
+  + NameAndType [a D]
+  + NameAndType [a Landroid/graphics/Bitmap;]
+  + NameAndType [addAll (Ljava/util/Collection;)Z]
+  + NameAndType [append (D)Ljava/lang/StringBuilder;]
+  + NameAndType [b ()V]
+  + NameAndType [b D]
+  + NameAndType [b Landroid/graphics/Paint;]
+  + NameAndType [bottom I]
+  + NameAndType [c Landroid/graphics/Paint;]
+  + NameAndType [c Ljava/lang/String;]
+  + NameAndType [clear ()V]
+  + NameAndType [contains (II)Z]
+  + NameAndType [cos (D)D]
+  + NameAndType [d Landroid/location/Location;]
+  + NameAndType [d Ljava/lang/String;]
+  + NameAndType [decodeResource (Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+  + NameAndType [distanceBetween (DDDD[F)V]
+  + NameAndType [drawBitmap (Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V]
+  + NameAndType [drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + NameAndType [drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+  + NameAndType [e Landroid/graphics/Rect;]
+  + NameAndType [e Ljava/util/List;]
+  + NameAndType [execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + NameAndType [f F]
+  + NameAndType [f Z]
+  + NameAndType [g F]
+  + NameAndType [getAction ()I]
+  + NameAndType [getContext ()Landroid/content/Context;]
+  + NameAndType [getHeight ()I]
+  + NameAndType [getLatitude ()D]
+  + NameAndType [getLongitude ()D]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [getWidth ()I]
+  + NameAndType [getX ()F]
+  + NameAndType [getY ()F]
+  + NameAndType [h F]
+  + NameAndType [hasNext ()Z]
+  + NameAndType [invalidate ()V]
+  + NameAndType [iterator ()Ljava/util/Iterator;]
+  + NameAndType [left I]
+  + NameAndType [next ()Ljava/lang/Object;]
+  + NameAndType [onDraw (Landroid/graphics/Canvas;)V]
+  + NameAndType [onTouchEvent (Landroid/view/MotionEvent;)Z]
+  + NameAndType [parse (Ljava/lang/String;)Landroid/net/Uri;]
+  + NameAndType [set (IIII)V]
+  + NameAndType [setAntiAlias (Z)V]
+  + NameAndType [setColor (I)V]
+  + NameAndType [setTextSize (F)V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [toDegrees (D)D]
+  + NameAndType [toRadians (D)D]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [top I]
+  + Utf8 [()D]
+  + Utf8 [()F]
+  + Utf8 [()I]
+  + Utf8 [()Landroid/content/Context;]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()Ljava/lang/Object;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()Ljava/util/Iterator;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(D)D]
+  + Utf8 [(D)Ljava/lang/StringBuilder;]
+  + Utf8 [(DDDD[F)V]
+  + Utf8 [(F)V]
+  + Utf8 [(I)V]
+  + Utf8 [(II)Z]
+  + Utf8 [(IIII)V]
+  + Utf8 [(Landroid/content/Context;Landroid/util/AttributeSet;)V]
+  + Utf8 [(Landroid/content/Context;Landroid/util/AttributeSet;I)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+  + Utf8 [(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V]
+  + Utf8 [(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+  + Utf8 [(Landroid/graphics/Canvas;)V]
+  + Utf8 [(Landroid/location/Location;)V]
+  + Utf8 [(Landroid/view/MotionEvent;)Z]
+  + Utf8 [(Lcom/example/android/ar/CameraOverlayView;)V]
+  + Utf8 [(Ljava/lang/String;)Landroid/net/Uri;]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+  + Utf8 [(Ljava/lang/String;Landroid/net/Uri;)V]
+  + Utf8 [(Ljava/util/Collection;)Z]
+  + Utf8 [(Ljava/util/List;)V]
+  + Utf8 [(Z)V]
+  + Utf8 [([F)V]
+  + Utf8 [([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+  + Utf8 [<init>]
+  + Utf8 [Azimuth:]
+  + Utf8 [Code]
+  + Utf8 [D]
+  + Utf8 [F]
+  + Utf8 [I]
+  + Utf8 [Landroid/graphics/Bitmap;]
+  + Utf8 [Landroid/graphics/Paint;]
+  + Utf8 [Landroid/graphics/Rect;]
+  + Utf8 [Landroid/location/Location;]
+  + Utf8 [Latitude:]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [Ljava/util/List;]
+  + Utf8 [Longitude:]
+  + Utf8 [Pitch:]
+  + Utf8 [Roll:]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [addAll]
+  + Utf8 [android.intent.action.VIEW]
+  + Utf8 [android/content/Context]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/graphics/Bitmap]
+  + Utf8 [android/graphics/BitmapFactory]
+  + Utf8 [android/graphics/Canvas]
+  + Utf8 [android/graphics/Paint]
+  + Utf8 [android/graphics/Rect]
+  + Utf8 [android/location/Location]
+  + Utf8 [android/net/Uri]
+  + Utf8 [android/view/MotionEvent]
+  + Utf8 [android/view/View]
+  + Utf8 [append]
+  + Utf8 [b]
+  + Utf8 [bottom]
+  + Utf8 [c]
+  + Utf8 [clear]
+  + Utf8 [com/example/android/ar/CameraOverlayView]
+  + Utf8 [com/example/android/ar/ProximityObject]
+  + Utf8 [com/example/android/ar/ProximitySearchTask]
+  + Utf8 [contains]
+  + Utf8 [cos]
+  + Utf8 [d]
+  + Utf8 [decodeResource]
+  + Utf8 [distanceBetween]
+  + Utf8 [drawBitmap]
+  + Utf8 [drawText]
+  + Utf8 [e]
+  + Utf8 [execute]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [getAction]
+  + Utf8 [getContext]
+  + Utf8 [getHeight]
+  + Utf8 [getLatitude]
+  + Utf8 [getLongitude]
+  + Utf8 [getResources]
+  + Utf8 [getWidth]
+  + Utf8 [getX]
+  + Utf8 [getY]
+  + Utf8 [h]
+  + Utf8 [hasNext]
+  + Utf8 [invalidate]
+  + Utf8 [iterator]
+  + Utf8 [java/lang/Math]
+  + Utf8 [java/lang/StringBuilder]
+  + Utf8 [java/util/Iterator]
+  + Utf8 [java/util/List]
+  + Utf8 [java/util/concurrent/CopyOnWriteArrayList]
+  + Utf8 [left]
+  + Utf8 [next]
+  + Utf8 [onDraw]
+  + Utf8 [onTouchEvent]
+  + Utf8 [parse]
+  + Utf8 [set]
+  + Utf8 [setAntiAlias]
+  + Utf8 [setColor]
+  + Utf8 [setTextSize]
+  + Utf8 [startActivity]
+  + Utf8 [toDegrees]
+  + Utf8 [toRadians]
+  + Utf8 [toString]
+  + Utf8 [top]
+
+Fields (count = 8):
+  + Field:        a Landroid/graphics/Bitmap;
+    Access flags: 0x2
+      = private android.graphics.Bitmap a
+  + Field:        b Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint b
+  + Field:        c Landroid/graphics/Paint;
+    Access flags: 0x2
+      = private android.graphics.Paint c
+  + Field:        d Landroid/location/Location;
+    Access flags: 0x2
+      = private android.location.Location d
+  + Field:        e Ljava/util/List;
+    Access flags: 0x2
+      = private java.util.List e
+  + Field:        f F
+    Access flags: 0x2
+      = private float f
+  + Field:        g F
+    Access flags: 0x2
+      = private float g
+  + Field:        h F
+    Access flags: 0x2
+      = private float h
+
+Methods (count = 9):
+  - Method:       <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    Access flags: 0x1
+      = public CameraOverlayView(android.content.Context,android.util.AttributeSet,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 4, stack = 4):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] iload_3 v3
+      [4] invokespecial #83
+        - Methodref [android/view/View.<init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V]
+      [7] aload_0 v0
+      [8] new #36
+        - Class [java/util/concurrent/CopyOnWriteArrayList]
+      [11] dup
+      [12] invokespecial #101
+        - Methodref [java/util/concurrent/CopyOnWriteArrayList.<init> ()V]
+      [15] putfield #48
+        - Fieldref [com/example/android/ar/CameraOverlayView.e Ljava/util/List;]
+      [18] aload_0 v0
+      [19] invokespecial #86
+        - Methodref [com/example/android/ar/CameraOverlayView.a ()V]
+      [22] aload_0 v0
+      [23] invokespecial #87
+        - Methodref [com/example/android/ar/CameraOverlayView.b ()V]
+      [26] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  - Method:       <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    Access flags: 0x1
+      = public CameraOverlayView(android.content.Context,android.util.AttributeSet)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 26, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] invokespecial #82
+        - Methodref [android/view/View.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V]
+      [6] aload_0 v0
+      [7] new #36
+        - Class [java/util/concurrent/CopyOnWriteArrayList]
+      [10] dup
+      [11] invokespecial #101
+        - Methodref [java/util/concurrent/CopyOnWriteArrayList.<init> ()V]
+      [14] putfield #48
+        - Fieldref [com/example/android/ar/CameraOverlayView.e Ljava/util/List;]
+      [17] aload_0 v0
+      [18] invokespecial #86
+        - Methodref [com/example/android/ar/CameraOverlayView.a ()V]
+      [21] aload_0 v0
+      [22] invokespecial #87
+        - Methodref [com/example/android/ar/CameraOverlayView.b ()V]
+      [25] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onDraw(Landroid/graphics/Canvas;)V
+    Access flags: 0x4
+      = protected void onDraw(android.graphics.Canvas)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 370, locals = 8, stack = 7):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #84
+        - Methodref [android/view/View.onDraw (Landroid/graphics/Canvas;)V]
+      [5] aload_1 v1
+      [6] invokevirtual #67
+        - Methodref [android/graphics/Canvas.getWidth ()I]
+      [9] istore_2 v2
+      [10] aload_1 v1
+      [11] invokevirtual #66
+        - Methodref [android/graphics/Canvas.getHeight ()I]
+      [14] istore_3 v3
+      [15] iload_2 v2
+      [16] aload_0 v0
+      [17] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [20] invokevirtual #61
+        - Methodref [android/graphics/Bitmap.getWidth ()I]
+      [23] isub
+      [24] istore_2 v2
+      [25] iload_3 v3
+      [26] aload_0 v0
+      [27] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [30] invokevirtual #60
+        - Methodref [android/graphics/Bitmap.getHeight ()I]
+      [33] isub
+      [34] istore_3 v3
+      [35] new #24
+        - Class [android/graphics/Rect]
+      [38] dup
+      [39] iload_2 v2
+      [40] iload_3 v3
+      [41] iload_2 v2
+      [42] aload_0 v0
+      [43] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [46] invokevirtual #61
+        - Methodref [android/graphics/Bitmap.getWidth ()I]
+      [49] iadd
+      [50] iload_3 v3
+      [51] aload_0 v0
+      [52] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [55] invokevirtual #60
+        - Methodref [android/graphics/Bitmap.getHeight ()I]
+      [58] iadd
+      [59] invokespecial #72
+        - Methodref [android/graphics/Rect.<init> (IIII)V]
+      [62] astore_2 v2
+      [63] aload_1 v1
+      [64] aload_0 v0
+      [65] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [68] aconst_null
+      [69] aload_2 v2
+      [70] aconst_null
+      [71] invokevirtual #64
+        - Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V]
+      [74] aload_1 v1
+      [75] new #33
+        - Class [java/lang/StringBuilder]
+      [78] dup
+      [79] ldc #12
+        - String [Azimuth:]
+      [81] invokespecial #98
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [84] aload_0 v0
+      [85] getfield #49
+        - Fieldref [com/example/android/ar/CameraOverlayView.f F]
+      [88] f2d
+      [89] invokestatic #96
+        - Methodref [java/lang/Math.toDegrees (D)D]
+      [92] invokevirtual #99
+        - Methodref [java/lang/StringBuilder.append (D)Ljava/lang/StringBuilder;]
+      [95] invokevirtual #100
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [98] ldc #4
+        - Float [8.0]
+      [100] ldc #7
+        - Float [40.0]
+      [102] aload_0 v0
+      [103] getfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [106] invokevirtual #65
+        - Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+      [109] aload_1 v1
+      [110] new #33
+        - Class [java/lang/StringBuilder]
+      [113] dup
+      [114] ldc #15
+        - String [Pitch:]
+      [116] invokespecial #98
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [119] aload_0 v0
+      [120] getfield #50
+        - Fieldref [com/example/android/ar/CameraOverlayView.g F]
+      [123] f2d
+      [124] invokestatic #96
+        - Methodref [java/lang/Math.toDegrees (D)D]
+      [127] invokevirtual #99
+        - Methodref [java/lang/StringBuilder.append (D)Ljava/lang/StringBuilder;]
+      [130] invokevirtual #100
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [133] ldc #4
+        - Float [8.0]
+      [135] ldc #8
+        - Float [70.0]
+      [137] aload_0 v0
+      [138] getfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [141] invokevirtual #65
+        - Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+      [144] aload_1 v1
+      [145] new #33
+        - Class [java/lang/StringBuilder]
+      [148] dup
+      [149] ldc #16
+        - String [Roll:]
+      [151] invokespecial #98
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [154] aload_0 v0
+      [155] getfield #51
+        - Fieldref [com/example/android/ar/CameraOverlayView.h F]
+      [158] f2d
+      [159] invokestatic #96
+        - Methodref [java/lang/Math.toDegrees (D)D]
+      [162] invokevirtual #99
+        - Methodref [java/lang/StringBuilder.append (D)Ljava/lang/StringBuilder;]
+      [165] invokevirtual #100
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [168] ldc #4
+        - Float [8.0]
+      [170] ldc #9
+        - Float [100.0]
+      [172] aload_0 v0
+      [173] getfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [176] invokevirtual #65
+        - Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+      [179] aload_0 v0
+      [180] getfield #47
+        - Fieldref [com/example/android/ar/CameraOverlayView.d Landroid/location/Location;]
+      [183] ifnull +70 (target=253)
+      [186] aload_0 v0
+      [187] getfield #47
+        - Fieldref [com/example/android/ar/CameraOverlayView.d Landroid/location/Location;]
+      [190] astore_2 v2
+      [191] aload_1 v1
+      [192] new #33
+        - Class [java/lang/StringBuilder]
+      [195] dup
+      [196] ldc #13
+        - String [Latitude:]
+      [198] invokespecial #98
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [201] aload_2 v2
+      [202] invokevirtual #76
+        - Methodref [android/location/Location.getLatitude ()D]
+      [205] invokevirtual #99
+        - Methodref [java/lang/StringBuilder.append (D)Ljava/lang/StringBuilder;]
+      [208] invokevirtual #100
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [211] ldc #4
+        - Float [8.0]
+      [213] ldc #10
+        - Float [130.0]
+      [215] aload_0 v0
+      [216] getfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [219] invokevirtual #65
+        - Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+      [222] aload_1 v1
+      [223] new #33
+        - Class [java/lang/StringBuilder]
+      [226] dup
+      [227] ldc #14
+        - String [Longitude:]
+      [229] invokespecial #98
+        - Methodref [java/lang/StringBuilder.<init> (Ljava/lang/String;)V]
+      [232] aload_2 v2
+      [233] invokevirtual #77
+        - Methodref [android/location/Location.getLongitude ()D]
+      [236] invokevirtual #99
+        - Methodref [java/lang/StringBuilder.append (D)Ljava/lang/StringBuilder;]
+      [239] invokevirtual #100
+        - Methodref [java/lang/StringBuilder.toString ()Ljava/lang/String;]
+      [242] ldc #4
+        - Float [8.0]
+      [244] ldc #11
+        - Float [160.0]
+      [246] aload_0 v0
+      [247] getfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [250] invokevirtual #65
+        - Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+      [253] aload_0 v0
+      [254] getfield #48
+        - Fieldref [com/example/android/ar/CameraOverlayView.e Ljava/util/List;]
+      [257] invokeinterface #106
+        - InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [262] astore_3 v3
+      [263] goto +97 (target=360)
+      [266] aload_3 v3
+      [267] invokeinterface #103
+        - InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [272] checkcast #30
+        - Class [com/example/android/ar/ProximityObject]
+      [275] astore_2 v2
+      [276] aload_0 v0
+      [277] aload_1 v1
+      [278] aload_2 v2
+      [279] astore v5
+      [281] astore v4
+      [283] astore_2 v2
+      [284] aload v5
+      [286] getfield #57
+        - Fieldref [com/example/android/ar/ProximityObject.f Z]
+      [289] ifeq +71 (target=360)
+      [292] aload v4
+      [294] aload_2 v2
+      [295] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [298] aload v5
+      [300] getfield #56
+        - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+      [303] getfield #42
+        - Fieldref [android/graphics/Rect.left I]
+      [306] i2f
+      [307] aload v5
+      [309] getfield #56
+        - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+      [312] getfield #43
+        - Fieldref [android/graphics/Rect.top I]
+      [315] i2f
+      [316] aconst_null
+      [317] invokevirtual #63
+        - Methodref [android/graphics/Canvas.drawBitmap (Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V]
+      [320] aload v5
+      [322] getfield #56
+        - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+      [325] getfield #42
+        - Fieldref [android/graphics/Rect.left I]
+      [328] istore v6
+      [330] aload v5
+      [332] getfield #56
+        - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+      [335] getfield #41
+        - Fieldref [android/graphics/Rect.bottom I]
+      [338] istore v7
+      [340] aload v4
+      [342] aload v5
+      [344] getfield #54
+        - Fieldref [com/example/android/ar/ProximityObject.c Ljava/lang/String;]
+      [347] iload v6
+      [349] i2f
+      [350] iload v7
+      [352] i2f
+      [353] aload_2 v2
+      [354] getfield #46
+        - Fieldref [com/example/android/ar/CameraOverlayView.c Landroid/graphics/Paint;]
+      [357] invokevirtual #65
+        - Methodref [android/graphics/Canvas.drawText (Ljava/lang/String;FFLandroid/graphics/Paint;)V]
+      [360] aload_3 v3
+      [361] invokeinterface #102
+        - InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [366] ifne -100 (target=266)
+      [369] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()V
+    Access flags: 0x2
+      = private void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 2, stack = 3):
+      [0] aload_0 v0
+      [1] invokevirtual #90
+        - Methodref [com/example/android/ar/CameraOverlayView.getResources ()Landroid/content/res/Resources;]
+      [4] astore_1 v1
+      [5] aload_0 v0
+      [6] aload_1 v1
+      [7] ldc #2
+        - Integer [2130837504]
+      [9] invokestatic #62
+        - Methodref [android/graphics/BitmapFactory.decodeResource (Landroid/content/res/Resources;I)Landroid/graphics/Bitmap;]
+      [12] putfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [15] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()V
+    Access flags: 0x2
+      = private void b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 74, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] new #23
+        - Class [android/graphics/Paint]
+      [4] dup
+      [5] invokespecial #68
+        - Methodref [android/graphics/Paint.<init> ()V]
+      [8] putfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [11] aload_0 v0
+      [12] getfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [15] iconst_1
+      [16] invokevirtual #69
+        - Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+      [19] aload_0 v0
+      [20] getfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [23] ldc #6
+        - Float [24.0]
+      [25] invokevirtual #71
+        - Methodref [android/graphics/Paint.setTextSize (F)V]
+      [28] aload_0 v0
+      [29] getfield #45
+        - Fieldref [com/example/android/ar/CameraOverlayView.b Landroid/graphics/Paint;]
+      [32] ldc #1
+        - Integer [-16711936]
+      [34] invokevirtual #70
+        - Methodref [android/graphics/Paint.setColor (I)V]
+      [37] aload_0 v0
+      [38] new #23
+        - Class [android/graphics/Paint]
+      [41] dup
+      [42] invokespecial #68
+        - Methodref [android/graphics/Paint.<init> ()V]
+      [45] putfield #46
+        - Fieldref [com/example/android/ar/CameraOverlayView.c Landroid/graphics/Paint;]
+      [48] aload_0 v0
+      [49] getfield #46
+        - Fieldref [com/example/android/ar/CameraOverlayView.c Landroid/graphics/Paint;]
+      [52] iconst_1
+      [53] invokevirtual #69
+        - Methodref [android/graphics/Paint.setAntiAlias (Z)V]
+      [56] aload_0 v0
+      [57] getfield #46
+        - Fieldref [com/example/android/ar/CameraOverlayView.c Landroid/graphics/Paint;]
+      [60] ldc #5
+        - Float [12.0]
+      [62] invokevirtual #71
+        - Methodref [android/graphics/Paint.setTextSize (F)V]
+      [65] aload_0 v0
+      [66] getfield #46
+        - Fieldref [com/example/android/ar/CameraOverlayView.c Landroid/graphics/Paint;]
+      [69] iconst_m1
+      [70] invokevirtual #70
+        - Methodref [android/graphics/Paint.setColor (I)V]
+      [73] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Landroid/location/Location;)V
+    Access flags: 0x10
+      = final void a(android.location.Location)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 35, locals = 3, stack = 5):
+      [0] aload_0 v0
+      [1] dup
+      [2] astore_2 v2
+      [3] monitorenter
+      [4] aload_0 v0
+      [5] aload_1 v1
+      [6] putfield #47
+        - Fieldref [com/example/android/ar/CameraOverlayView.d Landroid/location/Location;]
+      [9] new #31
+        - Class [com/example/android/ar/ProximitySearchTask]
+      [12] dup
+      [13] aload_0 v0
+      [14] invokespecial #93
+        - Methodref [com/example/android/ar/ProximitySearchTask.<init> (Lcom/example/android/ar/CameraOverlayView;)V]
+      [17] iconst_1
+      [18] anewarray #25
+        - Class [android/location/Location]
+      [21] dup
+      [22] iconst_0
+      [23] aload_1 v1
+      [24] aastore
+      [25] invokevirtual #94
+        - Methodref [com/example/android/ar/ProximitySearchTask.execute ([Ljava/lang/Object;)Landroid/os/AsyncTask;]
+      [28] pop
+      [29] aload_2 v2
+      [30] monitorexit
+      [31] return
+      [32] aload_2 v2
+      [33] monitorexit
+      [34] athrow
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (4 -> 31: 32):
+      - ExceptionInfo (32 -> 34: 32):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a([F)V
+    Access flags: 0x11
+      = public final void a(float[])
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 275, locals = 14, stack = 9):
+      [0] aload_0 v0
+      [1] dup
+      [2] astore_2 v2
+      [3] monitorenter
+      [4] aload_0 v0
+      [5] aload_1 v1
+      [6] iconst_0
+      [7] faload
+      [8] putfield #49
+        - Fieldref [com/example/android/ar/CameraOverlayView.f F]
+      [11] aload_0 v0
+      [12] aload_1 v1
+      [13] iconst_1
+      [14] faload
+      [15] putfield #50
+        - Fieldref [com/example/android/ar/CameraOverlayView.g F]
+      [18] aload_0 v0
+      [19] aload_1 v1
+      [20] iconst_2
+      [21] faload
+      [22] putfield #51
+        - Fieldref [com/example/android/ar/CameraOverlayView.h F]
+      [25] aload_0 v0
+      [26] dup
+      [27] astore_1 v1
+      [28] getfield #47
+        - Fieldref [com/example/android/ar/CameraOverlayView.d Landroid/location/Location;]
+      [31] ifnull +234 (target=265)
+      [34] iconst_3
+      [35] newarray 6
+      [37] astore_3 v3
+      [38] aload_1 v1
+      [39] getfield #48
+        - Fieldref [com/example/android/ar/CameraOverlayView.e Ljava/util/List;]
+      [42] invokeinterface #106
+        - InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [47] astore v5
+      [49] goto +206 (target=255)
+      [52] aload v5
+      [54] invokeinterface #103
+        - InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [59] checkcast #30
+        - Class [com/example/android/ar/ProximityObject]
+      [62] astore v4
+      [64] aload_1 v1
+      [65] getfield #47
+        - Fieldref [com/example/android/ar/CameraOverlayView.d Landroid/location/Location;]
+      [68] invokevirtual #76
+        - Methodref [android/location/Location.getLatitude ()D]
+      [71] aload_1 v1
+      [72] getfield #47
+        - Fieldref [com/example/android/ar/CameraOverlayView.d Landroid/location/Location;]
+      [75] invokevirtual #77
+        - Methodref [android/location/Location.getLongitude ()D]
+      [78] aload v4
+      [80] getfield #52
+        - Fieldref [com/example/android/ar/ProximityObject.a D]
+      [83] aload v4
+      [85] getfield #53
+        - Fieldref [com/example/android/ar/ProximityObject.b D]
+      [88] aload_3 v3
+      [89] invokestatic #75
+        - Methodref [android/location/Location.distanceBetween (DDDD[F)V]
+      [92] aload_1 v1
+      [93] aload v4
+      [95] aload_3 v3
+      [96] astore v7
+      [98] astore v6
+      [100] dup
+      [101] astore v4
+      [103] invokevirtual #91
+        - Methodref [com/example/android/ar/CameraOverlayView.getWidth ()I]
+      [106] i2f
+      [107] fstore v8
+      [109] aload v4
+      [111] getfield #49
+        - Fieldref [com/example/android/ar/CameraOverlayView.f F]
+      [114] f2d
+      [115] dstore v10
+      [117] aload v7
+      [119] iconst_1
+      [120] faload
+      [121] f2d
+      [122] invokestatic #97
+        - Methodref [java/lang/Math.toRadians (D)D]
+      [125] dload v10
+      [127] dsub
+      [128] dup2
+      [129] dstore v12
+      [131] invokestatic #95
+        - Methodref [java/lang/Math.cos (D)D]
+      [134] dconst_0
+      [135] dcmpg
+      [136] ifge +12 (target=148)
+      [139] aload v6
+      [141] iconst_0
+      [142] putfield #57
+        - Fieldref [com/example/android/ar/ProximityObject.f Z]
+      [145] goto +110 (target=255)
+      [148] aload v6
+      [150] iconst_1
+      [151] putfield #57
+        - Fieldref [com/example/android/ar/ProximityObject.f Z]
+      [154] fload v8
+      [156] fconst_2
+      [157] fdiv
+      [158] f2i
+      [159] i2d
+      [160] fload v8
+      [162] f2d
+      [163] ldc2_w #39
+        - Double [72.0]
+      [166] invokestatic #97
+        - Methodref [java/lang/Math.toRadians (D)D]
+      [169] ddiv
+      [170] dload v12
+      [172] dmul
+      [173] dadd
+      [174] d2i
+      [175] istore v8
+      [177] aload v4
+      [179] invokevirtual #89
+        - Methodref [com/example/android/ar/CameraOverlayView.getHeight ()I]
+      [182] i2d
+      [183] ldc2_w #37
+        - Double [0.9]
+      [186] dmul
+      [187] d2i
+      [188] i2f
+      [189] fstore v9
+      [191] aload v7
+      [193] iconst_0
+      [194] faload
+      [195] ldc #3
+        - Float [5.0]
+      [197] fdiv
+      [198] f2i
+      [199] istore v7
+      [201] fload v9
+      [203] iload v7
+      [205] i2f
+      [206] fsub
+      [207] f2i
+      [208] istore v7
+      [210] aload v6
+      [212] getfield #56
+        - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+      [215] iload v8
+      [217] aload v4
+      [219] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [222] invokevirtual #61
+        - Methodref [android/graphics/Bitmap.getWidth ()I]
+      [225] iconst_2
+      [226] idiv
+      [227] isub
+      [228] iload v7
+      [230] iload v8
+      [232] aload v4
+      [234] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [237] invokevirtual #61
+        - Methodref [android/graphics/Bitmap.getWidth ()I]
+      [240] iadd
+      [241] iload v7
+      [243] aload v4
+      [245] getfield #44
+        - Fieldref [com/example/android/ar/CameraOverlayView.a Landroid/graphics/Bitmap;]
+      [248] invokevirtual #60
+        - Methodref [android/graphics/Bitmap.getHeight ()I]
+      [251] iadd
+      [252] invokevirtual #74
+        - Methodref [android/graphics/Rect.set (IIII)V]
+      [255] aload v5
+      [257] invokeinterface #102
+        - InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [262] ifne -210 (target=52)
+      [265] aload_0 v0
+      [266] invokevirtual #92
+        - Methodref [com/example/android/ar/CameraOverlayView.invalidate ()V]
+      [269] aload_2 v2
+      [270] monitorexit
+      [271] return
+      [272] aload_2 v2
+      [273] monitorexit
+      [274] athrow
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (4 -> 271: 272):
+      - ExceptionInfo (272 -> 274: 272):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onTouchEvent(Landroid/view/MotionEvent;)Z
+    Access flags: 0x1
+      = public boolean onTouchEvent(android.view.MotionEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 102, locals = 6, stack = 4):
+      [0] aload_1 v1
+      [1] invokevirtual #79
+        - Methodref [android/view/MotionEvent.getAction ()I]
+      [4] ifeq +9 (target=13)
+      [7] aload_0 v0
+      [8] aload_1 v1
+      [9] invokespecial #85
+        - Methodref [android/view/View.onTouchEvent (Landroid/view/MotionEvent;)Z]
+      [12] ireturn
+      [13] aload_0 v0
+      [14] getfield #48
+        - Fieldref [com/example/android/ar/CameraOverlayView.e Ljava/util/List;]
+      [17] invokeinterface #106
+        - InterfaceMethodref [java/util/List.iterator ()Ljava/util/Iterator;]
+      [22] astore_3 v3
+      [23] goto +68 (target=91)
+      [26] aload_3 v3
+      [27] invokeinterface #103
+        - InterfaceMethodref [java/util/Iterator.next ()Ljava/lang/Object;]
+      [32] checkcast #30
+        - Class [com/example/android/ar/ProximityObject]
+      [35] astore_2 v2
+      [36] aload_1 v1
+      [37] invokevirtual #80
+        - Methodref [android/view/MotionEvent.getX ()F]
+      [40] f2i
+      [41] istore v4
+      [43] aload_1 v1
+      [44] invokevirtual #81
+        - Methodref [android/view/MotionEvent.getY ()F]
+      [47] f2i
+      [48] istore v5
+      [50] aload_2 v2
+      [51] getfield #56
+        - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+      [54] iload v4
+      [56] iload v5
+      [58] invokevirtual #73
+        - Methodref [android/graphics/Rect.contains (II)Z]
+      [61] ifeq +30 (target=91)
+      [64] new #19
+        - Class [android/content/Intent]
+      [67] dup
+      [68] ldc #17
+        - String [android.intent.action.VIEW]
+      [70] aload_2 v2
+      [71] getfield #55
+        - Fieldref [com/example/android/ar/ProximityObject.d Ljava/lang/String;]
+      [74] invokestatic #78
+        - Methodref [android/net/Uri.parse (Ljava/lang/String;)Landroid/net/Uri;]
+      [77] invokespecial #59
+        - Methodref [android/content/Intent.<init> (Ljava/lang/String;Landroid/net/Uri;)V]
+      [80] astore_1 v1
+      [81] aload_0 v0
+      [82] invokevirtual #88
+        - Methodref [com/example/android/ar/CameraOverlayView.getContext ()Landroid/content/Context;]
+      [85] aload_1 v1
+      [86] invokevirtual #58
+        - Methodref [android/content/Context.startActivity (Landroid/content/Intent;)V]
+      [89] iconst_1
+      [90] ireturn
+      [91] aload_3 v3
+      [92] invokeinterface #102
+        - InterfaceMethodref [java/util/Iterator.hasNext ()Z]
+      [97] ifne -71 (target=26)
+      [100] iconst_0
+      [101] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/util/List;)V
+    Access flags: 0x11
+      = public final void a(java.util.List)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 30, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] dup
+      [2] astore_2 v2
+      [3] monitorenter
+      [4] aload_0 v0
+      [5] getfield #48
+        - Fieldref [com/example/android/ar/CameraOverlayView.e Ljava/util/List;]
+      [8] invokeinterface #105
+        - InterfaceMethodref [java/util/List.clear ()V]
+      [13] aload_0 v0
+      [14] getfield #48
+        - Fieldref [com/example/android/ar/CameraOverlayView.e Ljava/util/List;]
+      [17] aload_1 v1
+      [18] invokeinterface #104
+        - InterfaceMethodref [java/util/List.addAll (Ljava/util/Collection;)Z]
+      [23] pop
+      [24] aload_2 v2
+      [25] monitorexit
+      [26] return
+      [27] aload_2 v2
+      [28] monitorexit
+      [29] athrow
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (4 -> 26: 27):
+      - ExceptionInfo (27 -> 29: 27):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/MyActivity$1
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x20
+    = class com.example.android.ar.MyActivity$1 extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/location/LocationListener]
+
+Constant Pool (count = 33):
+  - Class [android/location/LocationListener]
+  - Class [com/example/android/ar/CameraOverlayView]
+  - Class [com/example/android/ar/MyActivity]
+  - Class [com/example/android/ar/MyActivity$1]
+  - Class [java/lang/Object]
+  - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+  - Fieldref [com/example/android/ar/MyActivity$1.a Lcom/example/android/ar/MyActivity;]
+  - Methodref [com/example/android/ar/CameraOverlayView.a (Landroid/location/Location;)V]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Landroid/location/Location;)V]
+  + NameAndType [a Lcom/example/android/ar/CameraOverlayView;]
+  + NameAndType [a Lcom/example/android/ar/MyActivity;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/location/Location;)V]
+  + Utf8 [(Lcom/example/android/ar/MyActivity;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [(Ljava/lang/String;ILandroid/os/Bundle;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lcom/example/android/ar/CameraOverlayView;]
+  + Utf8 [Lcom/example/android/ar/MyActivity;]
+  + Utf8 [a]
+  + Utf8 [android/location/LocationListener]
+  + Utf8 [com/example/android/ar/CameraOverlayView]
+  + Utf8 [com/example/android/ar/MyActivity]
+  + Utf8 [com/example/android/ar/MyActivity$1]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onLocationChanged]
+  + Utf8 [onProviderDisabled]
+  + Utf8 [onProviderEnabled]
+  + Utf8 [onStatusChanged]
+
+Fields (count = 1):
+  + Field:        a Lcom/example/android/ar/MyActivity;
+    Access flags: 0x1002
+      = private com.example.android.ar.MyActivity a
+
+Methods (count = 5):
+  - Method:       <init>(Lcom/example/android/ar/MyActivity;)V
+    Access flags: 0x0
+      = MyActivity$1(com.example.android.ar.MyActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        - Fieldref [com/example/android/ar/MyActivity$1.a Lcom/example/android/ar/MyActivity;]
+      [5] aload_0 v0
+      [6] invokespecial #9
+        - Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onStatusChanged(java.lang.String,int,android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 4, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onProviderEnabled(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void onProviderEnabled(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 2, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onProviderDisabled(Ljava/lang/String;)V
+    Access flags: 0x1
+      = public void onProviderDisabled(java.lang.String)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 2, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onLocationChanged(Landroid/location/Location;)V
+    Access flags: 0x1
+      = public void onLocationChanged(android.location.Location)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #7
+        - Fieldref [com/example/android/ar/MyActivity$1.a Lcom/example/android/ar/MyActivity;]
+      [4] getfield #6
+        - Fieldref [com/example/android/ar/MyActivity.a Lcom/example/android/ar/CameraOverlayView;]
+      [7] aload_1 v1
+      [8] invokevirtual #8
+        - Methodref [com/example/android/ar/CameraOverlayView.a (Landroid/location/Location;)V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/OrientationListener
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.ar.OrientationListener extends java.lang.Object
+
+Interfaces (count = 1):
+  - Class [android/hardware/SensorEventListener]
+
+Constant Pool (count = 76):
+  - Float [0.1]
+  - Float [0.9]
+  - Class [android/hardware/Sensor]
+  - Class [android/hardware/SensorEvent]
+  - Class [android/hardware/SensorEventListener]
+  - Class [android/hardware/SensorManager]
+  - Class [com/example/android/ar/CameraOverlayView]
+  - Class [com/example/android/ar/OrientationListener]
+  - Class [java/lang/Object]
+  - Fieldref [android/hardware/SensorEvent.sensor Landroid/hardware/Sensor;]
+  - Fieldref [android/hardware/SensorEvent.values [F]
+  - Fieldref [com/example/android/ar/OrientationListener.a [F]
+  - Fieldref [com/example/android/ar/OrientationListener.b [F]
+  - Fieldref [com/example/android/ar/OrientationListener.c [F]
+  - Fieldref [com/example/android/ar/OrientationListener.d [F]
+  - Fieldref [com/example/android/ar/OrientationListener.e [F]
+  - Fieldref [com/example/android/ar/OrientationListener.f [F]
+  - Fieldref [com/example/android/ar/OrientationListener.g Lcom/example/android/ar/CameraOverlayView;]
+  - Methodref [android/hardware/Sensor.getType ()I]
+  - Methodref [android/hardware/SensorManager.getOrientation ([F[F)[F]
+  - Methodref [android/hardware/SensorManager.getRotationMatrix ([F[F[F[F)Z]
+  - Methodref [android/hardware/SensorManager.remapCoordinateSystem ([FII[F)Z]
+  - Methodref [com/example/android/ar/CameraOverlayView.a ([F)V]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a ([F)V]
+  + NameAndType [a [F]
+  + NameAndType [b [F]
+  + NameAndType [c [F]
+  + NameAndType [d [F]
+  + NameAndType [e [F]
+  + NameAndType [f [F]
+  + NameAndType [g Lcom/example/android/ar/CameraOverlayView;]
+  + NameAndType [getOrientation ([F[F)[F]
+  + NameAndType [getRotationMatrix ([F[F[F[F)Z]
+  + NameAndType [getType ()I]
+  + NameAndType [remapCoordinateSystem ([FII[F)Z]
+  + NameAndType [sensor Landroid/hardware/Sensor;]
+  + NameAndType [values [F]
+  + Utf8 [()I]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/hardware/Sensor;I)V]
+  + Utf8 [(Landroid/hardware/SensorEvent;)V]
+  + Utf8 [(Lcom/example/android/ar/CameraOverlayView;)V]
+  + Utf8 [([F)V]
+  + Utf8 [([FII[F)Z]
+  + Utf8 [([F[F)[F]
+  + Utf8 [([F[F[F[F)Z]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/hardware/Sensor;]
+  + Utf8 [Lcom/example/android/ar/CameraOverlayView;]
+  + Utf8 [[F]
+  + Utf8 [a]
+  + Utf8 [android/hardware/Sensor]
+  + Utf8 [android/hardware/SensorEvent]
+  + Utf8 [android/hardware/SensorEventListener]
+  + Utf8 [android/hardware/SensorManager]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/example/android/ar/CameraOverlayView]
+  + Utf8 [com/example/android/ar/OrientationListener]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [g]
+  + Utf8 [getOrientation]
+  + Utf8 [getRotationMatrix]
+  + Utf8 [getType]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onAccuracyChanged]
+  + Utf8 [onSensorChanged]
+  + Utf8 [remapCoordinateSystem]
+  + Utf8 [sensor]
+  + Utf8 [values]
+
+Fields (count = 7):
+  + Field:        a [F
+    Access flags: 0x2
+      = private float[] a
+  + Field:        b [F
+    Access flags: 0x2
+      = private float[] b
+  + Field:        c [F
+    Access flags: 0x2
+      = private float[] c
+  + Field:        d [F
+    Access flags: 0x2
+      = private float[] d
+  + Field:        e [F
+    Access flags: 0x2
+      = private float[] e
+  + Field:        f [F
+    Access flags: 0x2
+      = private float[] f
+  + Field:        g Lcom/example/android/ar/CameraOverlayView;
+    Access flags: 0x2
+      = private com.example.android.ar.CameraOverlayView g
+
+Methods (count = 3):
+  - Method:       <init>(Lcom/example/android/ar/CameraOverlayView;)V
+    Access flags: 0x1
+      = public OrientationListener(com.example.android.ar.CameraOverlayView)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 55, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #24
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] bipush 9
+      [7] newarray 6
+      [9] putfield #12
+        - Fieldref [com/example/android/ar/OrientationListener.a [F]
+      [12] aload_0 v0
+      [13] bipush 9
+      [15] newarray 6
+      [17] putfield #13
+        - Fieldref [com/example/android/ar/OrientationListener.b [F]
+      [20] aload_0 v0
+      [21] bipush 9
+      [23] newarray 6
+      [25] putfield #14
+        - Fieldref [com/example/android/ar/OrientationListener.c [F]
+      [28] aload_0 v0
+      [29] iconst_3
+      [30] newarray 6
+      [32] putfield #15
+        - Fieldref [com/example/android/ar/OrientationListener.d [F]
+      [35] aload_0 v0
+      [36] iconst_3
+      [37] newarray 6
+      [39] putfield #16
+        - Fieldref [com/example/android/ar/OrientationListener.e [F]
+      [42] aload_0 v0
+      [43] iconst_3
+      [44] newarray 6
+      [46] putfield #17
+        - Fieldref [com/example/android/ar/OrientationListener.f [F]
+      [49] aload_0 v0
+      [50] aload_1 v1
+      [51] putfield #18
+        - Fieldref [com/example/android/ar/OrientationListener.g Lcom/example/android/ar/CameraOverlayView;]
+      [54] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onAccuracyChanged(Landroid/hardware/Sensor;I)V
+    Access flags: 0x1
+      = public void onAccuracyChanged(android.hardware.Sensor,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 3, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onSensorChanged(Landroid/hardware/SensorEvent;)V
+    Access flags: 0x1
+      = public void onSensorChanged(android.hardware.SensorEvent)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 178, locals = 4, stack = 5):
+      [0] aload_0 v0
+      [1] dup
+      [2] astore_2 v2
+      [3] monitorenter
+      [4] aload_1 v1
+      [5] getfield #10
+        - Fieldref [android/hardware/SensorEvent.sensor Landroid/hardware/Sensor;]
+      [8] invokevirtual #19
+        - Methodref [android/hardware/Sensor.getType ()I]
+      [11] tableswitch (2 offsets, default=100) (target=111)
+        1: offset = 62, target = 73
+        2: offset = 21, target = 32
+        default: offset = 100, target = 111
+      [32] iconst_0
+      [33] istore_3 v3
+      [34] goto +31 (target=65)
+      [37] aload_0 v0
+      [38] getfield #16
+        - Fieldref [com/example/android/ar/OrientationListener.e [F]
+      [41] iload_3 v3
+      [42] aload_1 v1
+      [43] getfield #11
+        - Fieldref [android/hardware/SensorEvent.values [F]
+      [46] iload_3 v3
+      [47] faload
+      [48] ldc #1
+        - Float [0.1]
+      [50] fmul
+      [51] aload_0 v0
+      [52] getfield #16
+        - Fieldref [com/example/android/ar/OrientationListener.e [F]
+      [55] iload_3 v3
+      [56] faload
+      [57] ldc #2
+        - Float [0.9]
+      [59] fmul
+      [60] fadd
+      [61] fastore
+      [62] iinc v3, 1
+      [65] iload_3 v3
+      [66] iconst_3
+      [67] ificmplt -30 (target=37)
+      [70] goto +41 (target=111)
+      [73] iconst_0
+      [74] istore_3 v3
+      [75] goto +31 (target=106)
+      [78] aload_0 v0
+      [79] getfield #17
+        - Fieldref [com/example/android/ar/OrientationListener.f [F]
+      [82] iload_3 v3
+      [83] aload_1 v1
+      [84] getfield #11
+        - Fieldref [android/hardware/SensorEvent.values [F]
+      [87] iload_3 v3
+      [88] faload
+      [89] ldc #1
+        - Float [0.1]
+      [91] fmul
+      [92] aload_0 v0
+      [93] getfield #17
+        - Fieldref [com/example/android/ar/OrientationListener.f [F]
+      [96] iload_3 v3
+      [97] faload
+      [98] ldc #2
+        - Float [0.9]
+      [100] fmul
+      [101] fadd
+      [102] fastore
+      [103] iinc v3, 1
+      [106] iload_3 v3
+      [107] iconst_3
+      [108] ificmplt -30 (target=78)
+      [111] aload_0 v0
+      [112] getfield #12
+        - Fieldref [com/example/android/ar/OrientationListener.a [F]
+      [115] aload_0 v0
+      [116] getfield #14
+        - Fieldref [com/example/android/ar/OrientationListener.c [F]
+      [119] aload_0 v0
+      [120] getfield #17
+        - Fieldref [com/example/android/ar/OrientationListener.f [F]
+      [123] aload_0 v0
+      [124] getfield #16
+        - Fieldref [com/example/android/ar/OrientationListener.e [F]
+      [127] invokestatic #21
+        - Methodref [android/hardware/SensorManager.getRotationMatrix ([F[F[F[F)Z]
+      [130] ifeq +42 (target=172)
+      [133] aload_0 v0
+      [134] getfield #12
+        - Fieldref [com/example/android/ar/OrientationListener.a [F]
+      [137] iconst_3
+      [138] sipush 129
+      [141] aload_0 v0
+      [142] getfield #13
+        - Fieldref [com/example/android/ar/OrientationListener.b [F]
+      [145] invokestatic #22
+        - Methodref [android/hardware/SensorManager.remapCoordinateSystem ([FII[F)Z]
+      [148] pop
+      [149] aload_0 v0
+      [150] getfield #13
+        - Fieldref [com/example/android/ar/OrientationListener.b [F]
+      [153] aload_0 v0
+      [154] getfield #15
+        - Fieldref [com/example/android/ar/OrientationListener.d [F]
+      [157] invokestatic #20
+        - Methodref [android/hardware/SensorManager.getOrientation ([F[F)[F]
+      [160] pop
+      [161] aload_0 v0
+      [162] getfield #18
+        - Fieldref [com/example/android/ar/OrientationListener.g Lcom/example/android/ar/CameraOverlayView;]
+      [165] aload_0 v0
+      [166] getfield #15
+        - Fieldref [com/example/android/ar/OrientationListener.d [F]
+      [169] invokevirtual #23
+        - Methodref [com/example/android/ar/CameraOverlayView.a ([F)V]
+      [172] aload_2 v2
+      [173] monitorexit
+      [174] return
+      [175] aload_2 v2
+      [176] monitorexit
+      [177] athrow
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (4 -> 174: 175):
+      - ExceptionInfo (175 -> 177: 175):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: com/example/android/ar/ProximityObject
+  Superclass:    java/lang/Object
+  Major version: 0x31
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class com.example.android.ar.ProximityObject extends java.lang.Object
+
+Interfaces (count = 0):
+
+Constant Pool (count = 25):
+  - Class [android/graphics/Rect]
+  - Class [com/example/android/ar/ProximityObject]
+  - Class [java/lang/Object]
+  - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+  - Methodref [android/graphics/Rect.<init> ()V]
+  - Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [e Landroid/graphics/Rect;]
+  + Utf8 [()V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [D]
+  + Utf8 [Landroid/graphics/Rect;]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [Z]
+  + Utf8 [a]
+  + Utf8 [android/graphics/Rect]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [com/example/android/ar/ProximityObject]
+  + Utf8 [d]
+  + Utf8 [e]
+  + Utf8 [f]
+  + Utf8 [java/lang/Object]
+
+Fields (count = 6):
+  + Field:        a D
+    Access flags: 0x0
+      = double a
+  + Field:        b D
+    Access flags: 0x0
+      = double b
+  + Field:        c Ljava/lang/String;
+    Access flags: 0x0
+      = java.lang.String c
+  + Field:        d Ljava/lang/String;
+    Access flags: 0x0
+      = java.lang.String d
+  + Field:        e Landroid/graphics/Rect;
+    Access flags: 0x0
+      = android.graphics.Rect e
+  + Field:        f Z
+    Access flags: 0x0
+      = boolean f
+
+Methods (count = 1):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public ProximityObject()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 16, locals = 1, stack = 3):
+      [0] aload_0 v0
+      [1] invokespecial #6
+        - Methodref [java/lang/Object.<init> ()V]
+      [4] aload_0 v0
+      [5] new #1
+        - Class [android/graphics/Rect]
+      [8] dup
+      [9] invokespecial #5
+        - Methodref [android/graphics/Rect.<init> ()V]
+      [12] putfield #4
+        - Fieldref [com/example/android/ar/ProximityObject.e Landroid/graphics/Rect;]
+      [15] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

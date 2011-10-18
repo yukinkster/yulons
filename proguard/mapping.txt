@@ -1,0 +1,80 @@
+com.example.android.ar.CameraOverlayView -> com.example.android.ar.CameraOverlayView:
+    android.graphics.Bitmap bitmap -> a
+    android.graphics.Paint sensorPaint -> b
+    android.graphics.Paint proximityPaint -> c
+    android.location.Location deviceLocation -> d
+    java.util.List proximityList -> e
+    float azimuth -> f
+    float pitch -> g
+    float roll -> h
+    void onDraw(android.graphics.Canvas) -> onDraw
+    void ensureBitmap() -> a
+    void ensurePaint() -> b
+    void updateDeviceLocation(android.location.Location) -> a
+    void updateOrientasion(float[]) -> a
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void updateProximityList(java.util.List) -> a
+com.example.android.ar.CameraPreviewView -> com.example.android.ar.CameraPreviewView:
+    android.hardware.Camera camera -> a
+    void ensurefaceHolder() -> a
+    void surfaceChanged(android.view.SurfaceHolder,int,int,int) -> surfaceChanged
+    void surfaceCreated(android.view.SurfaceHolder) -> surfaceCreated
+    void surfaceDestroyed(android.view.SurfaceHolder) -> surfaceDestroyed
+com.example.android.ar.MyActivity -> com.example.android.ar.MyActivity:
+    com.example.android.ar.CameraOverlayView cameraOverlay -> a
+    com.example.android.ar.OrientationListener orientationListener -> e
+    boolean sensorRegistered -> f
+    android.hardware.SensorManager sensorManager -> g
+    android.location.LocationManager locationManager -> b
+    android.location.LocationListener bestLocationListener -> h
+    android.location.LocationListener bounceLocationListener -> c
+    android.location.LocationListener coarseLocationListener -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void onPause() -> onPause
+com.example.android.ar.MyActivity$1 -> com.example.android.ar.MyActivity$1:
+    com.example.android.ar.MyActivity this$0 -> a
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+com.example.android.ar.MyActivity$2 -> com.example.android.ar.MyActivity$2:
+    com.example.android.ar.MyActivity this$0 -> a
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+com.example.android.ar.MyActivity$3 -> com.example.android.ar.MyActivity$3:
+    com.example.android.ar.MyActivity this$0 -> a
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+com.example.android.ar.OrientationListener -> com.example.android.ar.OrientationListener:
+    float[] inR -> a
+    float[] outR -> b
+    float[] I -> c
+    float[] orientation -> d
+    float[] magneticFieldValues -> e
+    float[] accelerometerValues -> f
+    com.example.android.ar.CameraOverlayView overlay -> g
+    void onAccuracyChanged(android.hardware.Sensor,int) -> onAccuracyChanged
+    void onSensorChanged(android.hardware.SensorEvent) -> onSensorChanged
+com.example.android.ar.ProximityObject -> com.example.android.ar.ProximityObject:
+    double latitude -> a
+    double longitude -> b
+    java.lang.String name -> c
+    java.lang.String url -> d
+    android.graphics.Rect rect -> e
+    boolean display -> f
+com.example.android.ar.ProximitySearchTask -> com.example.android.ar.ProximitySearchTask:
+    com.example.android.ar.CameraOverlayView cameraOverlay -> a
+    java.util.List doInBackground(android.location.Location[]) -> a
+    void onPostExecute(java.lang.Object) -> onPostExecute
+    java.lang.Object doInBackground(java.lang.Object[]) -> doInBackground
+com.example.android.ar.R -> com.example.android.ar.R:
+com.example.android.ar.R$attr -> com.example.android.ar.R$attr:
+com.example.android.ar.R$drawable -> com.example.android.ar.R$drawable:
+com.example.android.ar.R$id -> com.example.android.ar.R$id:
+com.example.android.ar.R$layout -> com.example.android.ar.R$layout:
+com.example.android.ar.R$string -> com.example.android.ar.R$string:

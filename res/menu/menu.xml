@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_insert_location" android:title="現在位置を記録する" />
+    <item android:id="@+id/menu_delete_location" android:title="記録を消去する" />
+</menu>
+

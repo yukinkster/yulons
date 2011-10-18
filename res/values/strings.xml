@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Guisar</string>
+    
+    <string name="progress_message">しばらくお待ちください...</string>
+    <string name="location_unknown">現在地が取得できません</string>
+    
+</resources>
