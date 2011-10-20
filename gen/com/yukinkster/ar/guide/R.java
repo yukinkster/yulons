@@ -18,9 +18,10 @@ public final class R {
     }
     public static final class id {
         public static final int camera=0x7f060000;
-        public static final int menu_delete_location=0x7f060003;
-        public static final int menu_insert_location=0x7f060002;
-        public static final int orientations=0x7f060001;
+        public static final int locations=0x7f060001;
+        public static final int menu_delete_location=0x7f060004;
+        public static final int menu_insert_location=0x7f060003;
+        public static final int orientations=0x7f060002;
     }
     public static final class layout {
         public static final int main=0x7f030000;

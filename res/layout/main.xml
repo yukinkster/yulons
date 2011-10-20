@@ -8,6 +8,11 @@
         android:id="@+id/camera"
         android:layout_width="match_parent" android:layout_height="match_parent" />
 
+	<!-- オーバーレイの表示 -->
+	<com.yukinkster.ar.guide.LocationsView
+	    android:id="@+id/locations"
+		android:layout_width="match_parent" android:layout_height="match_parent" />
+
     <!-- センサーの表示 -->
 	<com.yukinkster.ar.guide.OrientationsView
 	    android:id="@+id/orientations"
